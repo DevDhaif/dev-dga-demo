@@ -2,6 +2,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardIcon,
   CardTitle,
   Timeline,
   TimelineContent,
@@ -10,6 +11,7 @@ import {
   TimelineTime,
   TimelineTitle,
 } from '@dev-dga/react';
+import { Activity } from 'lucide-react';
 import { tField, useLang, useT } from '@/i18n';
 import { formatDateTime } from '@/data/labels';
 import { recentActivity } from '@/store/selectors';
@@ -23,6 +25,9 @@ export function ActivityCard({ className }: { className?: string }) {
   return (
     <Card className={className} data-testid="recent-activity">
       <CardHeader>
+        <CardIcon>
+          <Activity />
+        </CardIcon>
         <CardTitle asChild>
           <h2>{t('overview.activity')}</h2>
         </CardTitle>

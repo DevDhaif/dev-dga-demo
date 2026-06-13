@@ -16,10 +16,11 @@ import {
   TabsContent,
   Card,
   CardHeader,
+  CardIcon,
   CardTitle,
   CardContent,
 } from '@dev-dga/react';
-import { CircleCheck, Flame, Gauge, Inbox } from 'lucide-react';
+import { ChartPie, CircleCheck, Flame, Gauge, Inbox } from 'lucide-react';
 import { useStore } from '@/store/store-context';
 import { kpis } from '@/store/selectors';
 import { DEMO_TODAY } from '@/data/fixtures';
@@ -84,6 +85,9 @@ export function Reports() {
       <div className="grid gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">
           <CardHeader>
+            <CardIcon>
+              <ChartPie />
+            </CardIcon>
             <CardTitle asChild>
               <h2>{t('reports.statusShare')}</h2>
             </CardTitle>
@@ -103,6 +107,9 @@ export function Reports() {
 
         <Card>
           <CardHeader>
+            <CardIcon>
+              <Gauge />
+            </CardIcon>
             <CardTitle asChild>
               <h2>{t('reports.sla')}</h2>
             </CardTitle>

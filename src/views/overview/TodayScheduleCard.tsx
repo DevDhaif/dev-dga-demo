@@ -3,6 +3,7 @@ import {
   Card,
   CardContent,
   CardHeader,
+  CardIcon,
   CardTitle,
   EmptyState,
   List,
@@ -10,6 +11,7 @@ import {
   ListItemAction,
   ListItemContent,
 } from '@dev-dga/react';
+import { CalendarDays } from 'lucide-react';
 import { tField, useLang, useT } from '@/i18n';
 import { APTSTATUS_BADGE, APTSTATUS_KEY } from '@/data/labels';
 import { DEMO_TODAY } from '@/data/fixtures';
@@ -24,6 +26,9 @@ export function TodayScheduleCard({ className }: { className?: string }) {
   return (
     <Card className={className} data-testid="today-schedule">
       <CardHeader>
+        <CardIcon>
+          <CalendarDays />
+        </CardIcon>
         <CardTitle asChild>
           <h2>{t('overview.today')}</h2>
         </CardTitle>

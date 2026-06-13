@@ -5,6 +5,7 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
+  CardIcon,
   CardTitle,
   Link,
   List,
@@ -13,6 +14,7 @@ import {
   ListItemContent,
   type DateRange,
 } from '@dev-dga/react';
+import { Inbox } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import { tField, useLang, useT } from '@/i18n';
 import { STATUS_BADGE, STATUS_KEY, formatDate } from '@/data/labels';
@@ -39,6 +41,9 @@ export function PendingRequestsCard({
   return (
     <Card className={className} data-testid="pending-requests">
       <CardHeader>
+        <CardIcon>
+          <Inbox />
+        </CardIcon>
         <CardTitle asChild>
           <h2>{t('overview.pending')}</h2>
         </CardTitle>
