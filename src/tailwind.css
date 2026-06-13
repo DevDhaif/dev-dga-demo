@@ -1,0 +1,17 @@
+/*
+ * Tailwind v4, preflight DISABLED on purpose.
+ *
+ * This app is styled by @dev-dga/css (layers: ddga-base, ddga-components), imported
+ * BEFORE this file in main.tsx. Tailwind's preflight (@layer base) is a global reset
+ * that lands AFTER ddga-base and clobbers the design system's base styling (heading
+ * sizes, button/list resets, etc.). We want Tailwind's UTILITIES + theme tokens for
+ * layout/composition, not its reset, so we import only theme + utilities.
+ *
+ * Net cascade order: ddga-base, ddga-components, theme, utilities -> utilities win,
+ * @dev-dga base styling intact.
+ *
+ * If you ever need preflight, add: @import 'tailwindcss/preflight.css' layer(base);
+ */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);

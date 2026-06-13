@@ -1,0 +1,110 @@
+[
+  {
+    "id": "act-01",
+    "at": "2026-06-10T11:40:00+03:00",
+    "kind": "approved",
+    "text": {
+      "en": "Health certificate batch REQ-2026-0122 approved",
+      "ar": "تمت الموافقة على دفعة الشهادات الصحية REQ-2026-0122"
+    }
+  },
+  {
+    "id": "act-02",
+    "at": "2026-06-10T08:54:00+03:00",
+    "kind": "submitted",
+    "text": {
+      "en": "New food truck license request REQ-2026-0128 submitted",
+      "ar": "تم تقديم طلب رخصة عربة طعام جديد REQ-2026-0128"
+    }
+  },
+  {
+    "id": "act-03",
+    "at": "2026-06-09T16:48:00+03:00",
+    "kind": "submitted",
+    "text": {
+      "en": "Urgent commercial license request REQ-2026-0127 submitted",
+      "ar": "تم تقديم طلب رخصة تجارية عاجل REQ-2026-0127"
+    }
+  },
+  {
+    "id": "act-04",
+    "at": "2026-06-09T14:05:00+03:00",
+    "kind": "booked",
+    "text": {
+      "en": "Site inspection appointment booked at North Center for 2026-06-10",
+      "ar": "تم حجز موعد معاينة موقع في مركز الشمال بتاريخ 2026-06-10"
+    }
+  },
+  {
+    "id": "act-05",
+    "at": "2026-06-09T10:31:00+03:00",
+    "kind": "rejected",
+    "text": {
+      "en": "Facility safety inspection request REQ-2026-0116 rejected",
+      "ar": "تم رفض طلب فحص سلامة المنشأة REQ-2026-0116"
+    }
+  },
+  {
+    "id": "act-06",
+    "at": "2026-06-08T15:11:00+03:00",
+    "kind": "uploaded",
+    "text": {
+      "en": "Annual Compliance Report 2025 uploaded by Hamad Al-Mansour",
+      "ar": "رفع حمد المنصور تقرير الالتزام السنوي 2025"
+    }
+  },
+  {
+    "id": "act-07",
+    "at": "2026-06-08T12:26:00+03:00",
+    "kind": "completed",
+    "text": {
+      "en": "Food truck license appointment at East Center completed",
+      "ar": "اكتمل موعد رخصة عربة الطعام في مركز الشرق"
+    }
+  },
+  {
+    "id": "act-08",
+    "at": "2026-06-07T09:41:00+03:00",
+    "kind": "submitted",
+    "text": {
+      "en": "Building permit request REQ-2026-0125 submitted",
+      "ar": "تم تقديم طلب تصريح بناء REQ-2026-0125"
+    }
+  },
+  {
+    "id": "act-09",
+    "at": "2026-06-06T13:58:00+03:00",
+    "kind": "assigned",
+    "text": {
+      "en": "Request REQ-2026-0124 assigned to Omar Al-Shammari",
+      "ar": "تم إسناد الطلب REQ-2026-0124 إلى عمر الشمري"
+    }
+  },
+  {
+    "id": "act-10",
+    "at": "2026-06-06T10:14:00+03:00",
+    "kind": "booked",
+    "text": {
+      "en": "Commercial license appointment booked at Downtown Center",
+      "ar": "تم حجز موعد رخصة تجارية في مركز وسط المدينة"
+    }
+  },
+  {
+    "id": "act-11",
+    "at": "2026-06-05T15:37:00+03:00",
+    "kind": "approved",
+    "text": {
+      "en": "Demolition permit REQ-2026-0118 approved",
+      "ar": "تمت الموافقة على تصريح الهدم REQ-2026-0118"
+    }
+  },
+  {
+    "id": "act-12",
+    "at": "2026-06-05T10:49:00+03:00",
+    "kind": "uploaded",
+    "text": {
+      "en": "Site survey photo for Al-Naseem uploaded by Ghada Al-Suhaim",
+      "ar": "رفعت غادة السحيم صورة مسح الموقع لحي النسيم"
+    }
+  }
+]

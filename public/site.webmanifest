@@ -1,0 +1,26 @@
+{
+  "name": "Masar | مسار",
+  "short_name": "Masar",
+  "description": "Bilingual government service-operations console — a showcase of the @dev-dga design system.",
+  "lang": "ar",
+  "dir": "rtl",
+  "id": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#25935F",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masar | مسار</title>
+    <meta
+      name="description"
+      content="Masar (مسار) | a bilingual government service-operations console demo built on the @dev-dga design system. Requests queue, appointments, documents, reports | AR/EN, light/dark, RTL/LTR."
+    />
+    <meta name="theme-color" content="#25935F" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://dev-dga-demo.vercel.app/" />
+    <meta property="og:site_name" content="Masar | مسار" />
+    <meta property="og:title" content="Masar | مسار · @dev-dga showcase" />
+    <meta
+      property="og:description"
+      content="Bilingual government service-operations console built as a true consumer of the @dev-dga design system."
+    />
+    <meta property="og:image" content="https://dev-dga-demo.vercel.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Masar | bilingual government service-operations console on the @dev-dga design system"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://dev-dga-demo.vercel.app/og.png" />
+    <script>
+      (function () {
+        try {
+          var p = JSON.parse(localStorage.getItem('masar.ui-prefs') || '{}');
+          var dir = p.dir === 'ltr' ? 'ltr' : 'rtl';
+          var mode = p.mode === 'dark' ? 'dark' : 'light';
+          var html = document.documentElement;
+          html.setAttribute('data-theme', mode);
+          html.setAttribute('dir', dir);
+          html.setAttribute('lang', dir === 'rtl' ? 'ar' : 'en');
+          html.style.colorScheme = mode;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

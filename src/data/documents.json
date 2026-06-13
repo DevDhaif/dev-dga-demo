@@ -1,0 +1,146 @@
+[
+  {
+    "id": "doc-01",
+    "title": { "en": "Building Permit Application Form", "ar": "نموذج طلب تصريح بناء" },
+    "kind": "pdf",
+    "sizeKB": 320,
+    "uploadedAt": "2026-03-04T10:12:00+03:00",
+    "uploadedBy": "st-01",
+    "tags": ["forms", "permits"]
+  },
+  {
+    "id": "doc-02",
+    "title": { "en": "Al-Olaya Site Plan", "ar": "مخطط موقع حي العليا" },
+    "kind": "image",
+    "sizeKB": 4860,
+    "uploadedAt": "2026-03-11T13:45:00+03:00",
+    "uploadedBy": "st-07",
+    "tags": ["site-plans"]
+  },
+  {
+    "id": "doc-03",
+    "title": { "en": "Commercial Licensing Regulations", "ar": "لائحة الترخيص التجاري" },
+    "kind": "pdf",
+    "sizeKB": 2140,
+    "uploadedAt": "2026-03-18T09:27:00+03:00",
+    "uploadedBy": "st-04",
+    "tags": ["regulations", "licenses"]
+  },
+  {
+    "id": "doc-04",
+    "title": { "en": "Q2 Requests Summary", "ar": "ملخص طلبات الربع الثاني" },
+    "kind": "sheet",
+    "sizeKB": 480,
+    "uploadedAt": "2026-04-02T15:08:00+03:00",
+    "uploadedBy": "st-09",
+    "tags": ["reports"]
+  },
+  {
+    "id": "doc-05",
+    "title": { "en": "Fire Exit Signage Photos", "ar": "صور لوحات مخارج الطوارئ" },
+    "kind": "image",
+    "sizeKB": 3260,
+    "uploadedAt": "2026-04-09T11:34:00+03:00",
+    "uploadedBy": "st-08",
+    "tags": ["inspections", "safety"]
+  },
+  {
+    "id": "doc-06",
+    "title": { "en": "Food Truck Operating Guidelines", "ar": "دليل تشغيل عربات الطعام المتنقلة" },
+    "kind": "pdf",
+    "sizeKB": 1680,
+    "uploadedAt": "2026-04-15T08:52:00+03:00",
+    "uploadedBy": "st-05",
+    "tags": ["regulations", "licenses"]
+  },
+  {
+    "id": "doc-07",
+    "title": { "en": "Demolition Site Photo , Al-Malaz", "ar": "صورة موقع الهدم ، حي الملز" },
+    "kind": "image",
+    "sizeKB": 5240,
+    "uploadedAt": "2026-04-21T14:19:00+03:00",
+    "uploadedBy": "st-07",
+    "tags": ["site-plans", "permits"]
+  },
+  {
+    "id": "doc-08",
+    "title": { "en": "Occupancy Certificate Template", "ar": "قالب شهادة الإشغال" },
+    "kind": "pdf",
+    "sizeKB": 260,
+    "uploadedAt": "2026-04-28T10:41:00+03:00",
+    "uploadedBy": "st-02",
+    "tags": ["templates", "certificates"]
+  },
+  {
+    "id": "doc-09",
+    "title": { "en": "June Inspection Schedule", "ar": "جدول معاينات شهر يونيو" },
+    "kind": "sheet",
+    "sizeKB": 190,
+    "uploadedAt": "2026-05-06T09:15:00+03:00",
+    "uploadedBy": "st-08",
+    "tags": ["inspections", "schedules"]
+  },
+  {
+    "id": "doc-10",
+    "title": { "en": "Zoning Map , Riyadh North", "ar": "خريطة التخطيط العمراني ، شمال الرياض" },
+    "kind": "image",
+    "sizeKB": 7640,
+    "uploadedAt": "2026-05-12T12:03:00+03:00",
+    "uploadedBy": "st-03",
+    "tags": ["maps"]
+  },
+  {
+    "id": "doc-11",
+    "title": { "en": "Health Certificate Requirements", "ar": "اشتراطات إصدار الشهادة الصحية" },
+    "kind": "pdf",
+    "sizeKB": 540,
+    "uploadedAt": "2026-05-17T16:28:00+03:00",
+    "uploadedBy": "st-06",
+    "tags": ["regulations", "certificates"]
+  },
+  {
+    "id": "doc-12",
+    "title": { "en": "Downtown Center Floor Plan", "ar": "المخطط الداخلي لمركز وسط المدينة" },
+    "kind": "image",
+    "sizeKB": 2890,
+    "uploadedAt": "2026-05-21T11:57:00+03:00",
+    "uploadedBy": "st-10",
+    "tags": ["site-plans"]
+  },
+  {
+    "id": "doc-13",
+    "title": { "en": "Inspection Report Template", "ar": "قالب تقرير المعاينة" },
+    "kind": "pdf",
+    "sizeKB": 410,
+    "uploadedAt": "2026-05-26T08:36:00+03:00",
+    "uploadedBy": "st-07",
+    "tags": ["templates", "inspections"]
+  },
+  {
+    "id": "doc-14",
+    "title": { "en": "Staff Shift Roster", "ar": "جدول مناوبات الموظفين" },
+    "kind": "sheet",
+    "sizeKB": 150,
+    "uploadedAt": "2026-06-01T13:22:00+03:00",
+    "uploadedBy": "st-09",
+    "tags": ["schedules"]
+  },
+  {
+    "id": "doc-15",
+    "title": { "en": "Site Survey Photo , Al-Naseem", "ar": "صورة مسح الموقع ، حي النسيم" },
+    "kind": "image",
+    "sizeKB": 4120,
+    "uploadedAt": "2026-06-05T10:49:00+03:00",
+    "uploadedBy": "st-08",
+    "tags": ["site-plans", "inspections"]
+  },
+  {
+    "id": "doc-16",
+    "title": { "en": "Annual Compliance Report 2025", "ar": "تقرير الالتزام السنوي 2025" },
+    "kind": "pdf",
+    "sizeKB": 6320,
+    "uploadedAt": "2026-06-08T15:11:00+03:00",
+    "uploadedBy": "st-03",
+    "tags": ["reports"]
+  }
+]

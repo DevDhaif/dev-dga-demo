@@ -1,0 +1,328 @@
+/* Ember , a complete @dev-dga brand starter, covering every controllable --ddga-* token.
+   Import AFTER `@dev-dga/css`: this file's unlayered :root beats @dev-dga's @layer rules.
+   Global tokens are set live. Prop-driven component vars are listed but commented ,
+   setting them on the base class shadows the size/variant/status prop (unlayered > layered),
+   so prefer the prop. Re-verify names against node_modules/@dev-dga/css/dist/ after upgrades. */
+
+:root {
+  /* brand palette , orange Ember ramp; the palette-derived tints read this */
+  --ddga-sa-25: #fff8f3;
+  --ddga-sa-50: #fff1e6;
+  --ddga-sa-100: #ffe0c7;
+  --ddga-sa-200: #ffc79e;
+  --ddga-sa-300: #ffa566;
+  --ddga-sa-400: #fb8332;
+  --ddga-sa-500: #f4640f;
+  --ddga-sa-600: #d44e08;
+  --ddga-sa-700: #b03c0a;
+  --ddga-sa-800: #8a300d;
+  --ddga-sa-900: #6b270d;
+  --ddga-sa-950: #3d1405;
+
+  /* neutral + status palettes , @dev-dga defaults; retune to rebrand. gold drives Rating stars. */
+  --ddga-gray-25: #fcfcfd;
+  --ddga-gray-50: #f9fafb;
+  --ddga-gray-100: #f3f4f6;
+  --ddga-gray-200: #e5e7eb;
+  --ddga-gray-300: #d2d6db;
+  --ddga-gray-400: #9da4ae;
+  --ddga-gray-500: #6c737f;
+  --ddga-gray-600: #4d5761;
+  --ddga-gray-700: #384250;
+  --ddga-gray-800: #1f2a37;
+  --ddga-gray-900: #111927;
+  --ddga-gray-950: #0d121c;
+
+  --ddga-error-25: #fffbfa;
+  --ddga-error-50: #fef3f2;
+  --ddga-error-100: #fee4e2;
+  --ddga-error-200: #fecdca;
+  --ddga-error-300: #fda29b;
+  --ddga-error-400: #f97066;
+  --ddga-error-500: #f04438;
+  --ddga-error-600: #d92d20;
+  --ddga-error-700: #b42318;
+  --ddga-error-800: #912018;
+  --ddga-error-900: #7a271a;
+  --ddga-error-950: #55160c;
+
+  --ddga-warning-25: #fffcf5;
+  --ddga-warning-50: #fffaeb;
+  --ddga-warning-100: #fef0c7;
+  --ddga-warning-200: #fedf89;
+  --ddga-warning-300: #fec84b;
+  --ddga-warning-400: #fdb022;
+  --ddga-warning-500: #f79009;
+  --ddga-warning-600: #dc6803;
+  --ddga-warning-700: #b54708;
+  --ddga-warning-800: #93370d;
+  --ddga-warning-900: #7a2e0e;
+  --ddga-warning-950: #4e1d09;
+
+  --ddga-success-25: #f6fef9;
+  --ddga-success-50: #ecfdf3;
+  --ddga-success-100: #dcfae6;
+  --ddga-success-200: #abefc6;
+  --ddga-success-300: #75e0a7;
+  --ddga-success-400: #47cd89;
+  --ddga-success-500: #17b26a;
+  --ddga-success-600: #079455;
+  --ddga-success-700: #067647;
+  --ddga-success-800: #085d3a;
+  --ddga-success-900: #074d31;
+  --ddga-success-950: #053321;
+
+  --ddga-info-25: #f5faff;
+  --ddga-info-50: #eff8ff;
+  --ddga-info-100: #d1e9ff;
+  --ddga-info-200: #b2ddff;
+  --ddga-info-300: #84caff;
+  --ddga-info-400: #53b1fd;
+  --ddga-info-500: #2e90fa;
+  --ddga-info-600: #1570ef;
+  --ddga-info-700: #175cd3;
+  --ddga-info-800: #1849a9;
+  --ddga-info-900: #194185;
+  --ddga-info-950: #102a56;
+
+  --ddga-gold-25: #fffef7;
+  --ddga-gold-50: #fffef2;
+  --ddga-gold-100: #fffce6;
+  --ddga-gold-200: #fcf3bd;
+  --ddga-gold-300: #fae996;
+  --ddga-gold-400: #f7d54d;
+  --ddga-gold-500: #f5bd02;
+  --ddga-gold-600: #dba102;
+  --ddga-gold-700: #b87b02;
+  --ddga-gold-800: #945c01;
+  --ddga-gold-900: #6e3c00;
+  --ddga-gold-950: #472400;
+
+  --ddga-lavender-25: #fefcff;
+  --ddga-lavender-50: #f9f5fa;
+  --ddga-lavender-100: #f2e9f5;
+  --ddga-lavender-200: #e1cce8;
+  --ddga-lavender-300: #ccadd9;
+  --ddga-lavender-400: #a57bba;
+  --ddga-lavender-500: #80519f;
+  --ddga-lavender-600: #6d428f;
+  --ddga-lavender-700: #532d75;
+  --ddga-lavender-800: #3d1d5e;
+  --ddga-lavender-900: #281047;
+  --ddga-lavender-950: #16072e;
+
+  /* primary */
+  --ddga-color-primary: #f4640f;
+  --ddga-color-primary-hover: #d44e08;
+  --ddga-color-primary-active: #b03c0a;
+  --ddga-color-primary-foreground: #ffffff;
+  --ddga-color-ring: #f4640f;
+
+  /* secondary */
+  --ddga-color-secondary: #f6efe7;
+  --ddga-color-secondary-hover: #ece1d4;
+  --ddga-color-secondary-foreground: #1c1714;
+
+  /* surfaces & neutrals */
+  --ddga-color-background: #fffaf5;
+  --ddga-color-foreground: #1c1714;
+  --ddga-color-card: #ffffff;
+  --ddga-color-card-foreground: #1c1714;
+  --ddga-color-muted: #f6efe7;
+  --ddga-color-muted-foreground: #7a6f64;
+  --ddga-color-border: #ece1d4;
+  --ddga-color-input: #ddcfbf;
+
+  /* status , semantic, kept distinct from the orange brand */
+  --ddga-color-destructive: #e02d2d;
+  --ddga-color-destructive-hover: #c11f1f;
+  --ddga-color-destructive-foreground: #ffffff;
+  --ddga-color-error: #e02d2d;
+  --ddga-color-error-hover: #c11f1f;
+  --ddga-color-error-foreground: #ffffff;
+  --ddga-color-success: #1f9d57;
+  --ddga-color-success-hover: #158045;
+  --ddga-color-success-foreground: #ffffff;
+  --ddga-color-warning: #d99e00;
+  --ddga-color-warning-hover: #b07f00;
+  --ddga-color-warning-foreground: #1c1714;
+  --ddga-color-info: #2563eb;
+  --ddga-color-info-hover: #1d4ed8;
+  --ddga-color-info-foreground: #ffffff;
+
+  /* text */
+  --ddga-text-primary: #1c1714;
+  --ddga-text-secondary: #4d423a;
+  --ddga-text-tertiary: #7a6f64;
+  --ddga-text-placeholder: #a99d8f;
+
+  /* spacing , 4px scale */
+  --ddga-space-0: 0;
+  --ddga-space-1: 0.25rem;
+  --ddga-space-2: 0.5rem;
+  --ddga-space-3: 0.75rem;
+  --ddga-space-4: 1rem;
+  --ddga-space-5: 1.25rem;
+  --ddga-space-6: 1.5rem;
+  --ddga-space-8: 2rem;
+  --ddga-space-10: 2.5rem;
+  --ddga-space-12: 3rem;
+  --ddga-space-16: 4rem;
+
+  /* radius */
+  --ddga-radius-none: 0;
+  --ddga-radius-sm: 0.25rem;
+  --ddga-radius-md: 0.625rem;
+  --ddga-radius-lg: 0.875rem;
+  --ddga-radius-xl: 1.25rem;
+  --ddga-radius-full: 9999px;
+
+  /* shadow , warm-tinted */
+  --ddga-shadow-none: none;
+  --ddga-shadow-sm: 0 1px 2px 0 rgb(60 30 10 / 0.06);
+  --ddga-shadow-md: 0 4px 8px -2px rgb(60 30 10 / 0.12);
+  --ddga-shadow-lg: 0 12px 24px -6px rgb(60 30 10 / 0.16);
+
+  /* typography , custom families must be loaded or they fall back */
+  --ddga-font-en: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --ddga-font-ar: 'IBM Plex Sans Arabic', 'Noto Sans Arabic', sans-serif;
+  --ddga-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --ddga-font-weight-regular: 400;
+  --ddga-font-weight-medium: 500;
+  --ddga-font-weight-semibold: 600;
+  --ddga-font-weight-bold: 700;
+  --ddga-font-size-xs: 0.75rem;
+  --ddga-font-size-sm: 0.875rem;
+  --ddga-font-size-base: 1rem;
+  --ddga-font-size-lg: 1.125rem;
+  --ddga-font-size-xl: 1.25rem;
+  --ddga-font-size-2xl: 1.5rem;
+  --ddga-font-size-3xl: 2rem;
+}
+
+/* dark , warm espresso. Palette ramps, spacing, radius, and fonts stay constant across modes. */
+[data-theme='dark'] {
+  --ddga-color-background: #17120f;
+  --ddga-color-foreground: #f5ede4;
+  --ddga-color-card: #211a15;
+  --ddga-color-card-foreground: #f5ede4;
+  --ddga-color-muted: #2a211b;
+  --ddga-color-muted-foreground: #b3a596;
+  --ddga-color-border: #38291f;
+  --ddga-color-input: #3a2c22;
+
+  --ddga-color-primary: #fb8332;
+  --ddga-color-primary-hover: #ffa566;
+  --ddga-color-primary-active: #f4640f;
+  --ddga-color-primary-foreground: #261304;
+  --ddga-color-ring: #fb8332;
+
+  --ddga-color-secondary: #2a211b;
+  --ddga-color-secondary-hover: #38291f;
+  --ddga-color-secondary-foreground: #f5ede4;
+
+  --ddga-color-destructive: #f87171;
+  --ddga-color-destructive-hover: #ef4444;
+  --ddga-color-destructive-foreground: #1a0a0a;
+  --ddga-color-error: #f87171;
+  --ddga-color-error-hover: #ef4444;
+  --ddga-color-error-foreground: #1a0a0a;
+  --ddga-color-success: #4ade80;
+  --ddga-color-success-hover: #22c55e;
+  --ddga-color-success-foreground: #07210f;
+  --ddga-color-warning: #fbbf24;
+  --ddga-color-warning-hover: #f59e0b;
+  --ddga-color-warning-foreground: #2a1c00;
+  --ddga-color-info: #60a5fa;
+  --ddga-color-info-hover: #3b82f6;
+  --ddga-color-info-foreground: #0a1838;
+
+  --ddga-text-primary: #fbf6f0;
+  --ddga-text-secondary: rgb(251 246 240 / 0.72);
+  --ddga-text-tertiary: rgb(251 246 240 / 0.55);
+  --ddga-text-placeholder: #8a7d70;
+
+  --ddga-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --ddga-shadow-md: 0 4px 8px -2px rgb(0 0 0 / 0.5);
+  --ddga-shadow-lg: 0 12px 24px -6px rgb(0 0 0 / 0.55);
+}
+
+/* Per-component vars with a fixed default , safe to set on the component's own class
+   (no size/variant rule re-sets them). A :root override of these is silently shadowed. */
+.ddga-sidebar-wrapper {
+  --ddga-sidebar-width: 17rem;
+  --ddga-sidebar-width-icon: 3.75rem;
+}
+.ddga-tabs {
+  --ddga-tabs-indicator-thickness: 3px;
+}
+.ddga-description-list {
+  --ddga-dl-term-width: 13rem;
+}
+.ddga-divider {
+  --ddga-divider-color: var(--ddga-color-border);
+}
+.ddga-quote {
+  --ddga-quote-accent: var(--ddga-color-primary);
+}
+.ddga-rating {
+  --ddga-rating-color: var(--ddga-gold-500);
+}
+.ddga-command-dialog {
+  --ddga-command-dialog-width: 640px;
+}
+.ddga-scroll-area {
+  --ddga-scroll-area-size: 0.5rem;
+  --ddga-scroll-area-thumb: var(--ddga-gray-400);
+  --ddga-scroll-area-thumb-hover: var(--ddga-gray-500);
+}
+[data-theme='dark'] .ddga-scroll-area {
+  --ddga-scroll-area-thumb: rgb(255 255 255 / 0.2);
+  --ddga-scroll-area-thumb-hover: rgb(255 255 255 / 0.3);
+}
+
+/* Prop-driven & status component vars , the component re-sets these per size/variant/status.
+   Uncomment to shift the default for EVERY instance (this shadows the prop); for one-offs,
+   use the prop or an inline style. Values shown are the @dev-dga defaults. */
+.ddga-avatar {
+  /* --ddga-avatar-size: 40px; */
+}
+.ddga-card {
+  /* --ddga-card-padding: var(--ddga-space-5); --ddga-card-image-aspect: 16 / 9; */
+}
+.ddga-table {
+  /* --ddga-table-pad-block: var(--ddga-space-3); --ddga-table-pad-inline: var(--ddga-space-4); */
+}
+.ddga-slider {
+  /* --ddga-slider-rail: 6px; --ddga-slider-thumb: 18px; */
+}
+.ddga-switch {
+  /* --ddga-switch-thumb-travel: 16px; */
+}
+.ddga-timeline {
+  /* --ddga-timeline-node-size: 1.5rem; --ddga-timeline-dot-size: 0.75rem; --ddga-timeline-gap: var(--ddga-space-5); --ddga-timeline-rail-gap: var(--ddga-space-3); --ddga-timeline-node-color: var(--ddga-text-tertiary); */
+}
+.ddga-empty-state {
+  /* --ddga-empty-state-media-size: 3.5rem; --ddga-empty-state-icon-size: 1.75rem; --ddga-empty-state-tint-bg: var(--ddga-gray-100); --ddga-empty-state-tint-fg: var(--ddga-gray-600); */
+}
+.ddga-stat {
+  /* --ddga-stat-accent-bg: var(--ddga-sa-50); --ddga-stat-accent-fg: var(--ddga-sa-600); --ddga-stat-change-color: var(--ddga-text-secondary); */
+}
+.ddga-stat-group {
+  /* --ddga-stat-group-gap: var(--ddga-space-4); --ddga-stat-group-columns: 3; */
+}
+.ddga-alert {
+  /* --ddga-alert-bg: var(--ddga-info-100); --ddga-alert-fg: var(--ddga-info-700); --ddga-alert-accent: var(--ddga-color-info); */
+}
+.ddga-progress {
+  /* --ddga-progress-color: var(--ddga-color-primary); */
+}
+.ddga-toast {
+  /* --ddga-toast-accent: var(--ddga-color-info); */
+}
+.ddga-rating--error {
+  /* --ddga-rating-empty: var(--ddga-color-error); */
+}
+.ddga-aspect-ratio {
+  /* --ddga-aspect-ratio: 1; */
+}

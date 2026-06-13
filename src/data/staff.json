@@ -1,0 +1,162 @@
+[
+  {
+    "id": "st-01",
+    "name": { "en": "Faisal Al-Harthi", "ar": "فيصل الحارثي" },
+    "role": { "en": "Permits Officer", "ar": "مسؤول تصاريح" },
+    "department": "permits",
+    "initials": "FA",
+    "rating": 4.6,
+    "onShift": true,
+    "email": "faisal.alharthi@masar.gov.sa",
+    "joinedAt": "2021-03-14",
+    "resolved": 342,
+    "quote": {
+      "en": "A clear permit today prevents a dispute tomorrow.",
+      "ar": "تصريح واضح اليوم يجنّبنا نزاعًا غدًا."
+    }
+  },
+  {
+    "id": "st-02",
+    "name": { "en": "Najla Al-Omran", "ar": "نجلاء العمران" },
+    "role": { "en": "Permits Officer", "ar": "مسؤولة تصاريح" },
+    "department": "permits",
+    "initials": "NA",
+    "rating": 4.8,
+    "onShift": true,
+    "email": "najla.alomran@masar.gov.sa",
+    "joinedAt": "2022-09-05",
+    "resolved": 276,
+    "quote": {
+      "en": "Every application is a family or a business waiting on us.",
+      "ar": "خلف كل طلب أسرة أو مشروع ينتظر إنجازنا."
+    }
+  },
+  {
+    "id": "st-03",
+    "name": { "en": "Hamad Al-Mansour", "ar": "حمد المنصور" },
+    "role": { "en": "Senior Permits Officer", "ar": "مسؤول تصاريح أول" },
+    "department": "permits",
+    "initials": "HA",
+    "rating": 4.4,
+    "onShift": false,
+    "email": "hamad.almansour@masar.gov.sa",
+    "joinedAt": "2021-01-10",
+    "resolved": 389,
+    "quote": {
+      "en": "Read the regulation twice, decide once.",
+      "ar": "اقرأ اللائحة مرتين، وقرر مرة واحدة."
+    }
+  },
+  {
+    "id": "st-04",
+    "name": { "en": "Arwa Al-Fayez", "ar": "أروى الفايز" },
+    "role": { "en": "License Specialist", "ar": "أخصائية تراخيص" },
+    "department": "licenses",
+    "initials": "AA",
+    "rating": 4.7,
+    "onShift": true,
+    "email": "arwa.alfayez@masar.gov.sa",
+    "joinedAt": "2023-02-19",
+    "resolved": 198,
+    "quote": {
+      "en": "Fast licensing is good service; accurate licensing is good governance.",
+      "ar": "سرعة الترخيص خدمة جيدة، ودقته حوكمة رشيدة."
+    }
+  },
+  {
+    "id": "st-05",
+    "name": { "en": "Salman Al-Najjar", "ar": "سلمان النجار" },
+    "role": { "en": "License Specialist", "ar": "أخصائي تراخيص" },
+    "department": "licenses",
+    "initials": "SA",
+    "rating": 4.2,
+    "onShift": true,
+    "email": "salman.alnajjar@masar.gov.sa",
+    "joinedAt": "2022-06-12",
+    "resolved": 254,
+    "quote": {
+      "en": "Helping a business open its doors is the best part of this job.",
+      "ar": "أجمل ما في عملنا أن نساعد منشأة على فتح أبوابها."
+    }
+  },
+  {
+    "id": "st-06",
+    "name": { "en": "Dalal Al-Mutlaq", "ar": "دلال المطلق" },
+    "role": { "en": "Senior License Specialist", "ar": "أخصائية تراخيص أولى" },
+    "department": "licenses",
+    "initials": "DA",
+    "rating": 4.9,
+    "onShift": false,
+    "email": "dalal.almutlaq@masar.gov.sa",
+    "joinedAt": "2021-11-28",
+    "resolved": 317,
+    "quote": {
+      "en": "Consistency in decisions builds the public's trust.",
+      "ar": "الاتساق في القرارات هو ما يبني ثقة المراجعين."
+    }
+  },
+  {
+    "id": "st-07",
+    "name": { "en": "Omar Al-Shammari", "ar": "عمر الشمري" },
+    "role": { "en": "Senior Inspector", "ar": "مفتش أول" },
+    "department": "inspections",
+    "initials": "OA",
+    "rating": 4.5,
+    "onShift": true,
+    "email": "omar.alshammari@masar.gov.sa",
+    "joinedAt": "2021-08-22",
+    "resolved": 365,
+    "quote": {
+      "en": "What I document on site protects people for years.",
+      "ar": "ما أوثّقه في الموقع يحمي الناس لسنوات."
+    }
+  },
+  {
+    "id": "st-08",
+    "name": { "en": "Ghada Al-Suhaim", "ar": "غادة السحيم" },
+    "role": { "en": "Field Inspector", "ar": "مفتشة ميدانية" },
+    "department": "inspections",
+    "initials": "GA",
+    "rating": 4.1,
+    "onShift": false,
+    "email": "ghada.alsuhaim@masar.gov.sa",
+    "joinedAt": "2024-04-07",
+    "resolved": 121,
+    "quote": {
+      "en": "Safety is measured on the ground, not on paper.",
+      "ar": "السلامة تُقاس في الميدان لا على الورق."
+    }
+  },
+  {
+    "id": "st-09",
+    "name": { "en": "Tariq Al-Bassam", "ar": "طارق البسام" },
+    "role": { "en": "Support Agent", "ar": "موظف دعم" },
+    "department": "support",
+    "initials": "TA",
+    "rating": 3.9,
+    "onShift": true,
+    "email": "tariq.albassam@masar.gov.sa",
+    "joinedAt": "2023-10-15",
+    "resolved": 187,
+    "quote": {
+      "en": "A calm answer turns a complaint into a thank-you.",
+      "ar": "الإجابة الهادئة تحوّل الشكوى إلى شكر."
+    }
+  },
+  {
+    "id": "st-10",
+    "name": { "en": "Huda Al-Sharif", "ar": "هدى الشريف" },
+    "role": { "en": "Support Agent", "ar": "موظفة دعم" },
+    "department": "support",
+    "initials": "HA",
+    "rating": 4.3,
+    "onShift": false,
+    "email": "huda.alsharif@masar.gov.sa",
+    "joinedAt": "2025-01-26",
+    "resolved": 64,
+    "quote": {
+      "en": "Listening well is half the solution.",
+      "ar": "حسن الإصغاء نصف الحل."
+    }
+  }
+]

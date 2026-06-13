@@ -1,0 +1,599 @@
+[
+  {
+    "id": "REQ-2026-0101",
+    "serviceId": "svc-building-permit",
+    "applicant": {
+      "name": { "en": "Abdullah Al-Qahtani", "ar": "عبدالله القحطاني" },
+      "nationalId": "1042837516",
+      "phone": "+966512384790"
+    },
+    "district": { "en": "Al-Olaya", "ar": "العليا" },
+    "status": "completed",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": "st-01",
+    "submittedAt": "2026-04-02T09:14:00+03:00",
+    "neededBy": "2026-05-15",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["new-application", "residential"],
+    "notes": "Villa construction in an approved residential plot.",
+    "attachments": [
+      { "id": "att-0101-1", "name": "site-plan.pdf", "sizeKB": 1840 },
+      { "id": "att-0101-2", "name": "land-deed.pdf", "sizeKB": 920 }
+    ]
+  },
+  {
+    "id": "REQ-2026-0102",
+    "serviceId": "svc-demolition-permit",
+    "applicant": {
+      "name": { "en": "Sara Al-Otaibi", "ar": "سارة العتيبي" },
+      "nationalId": "1093561248",
+      "phone": "+966538274915"
+    },
+    "district": { "en": "Al-Malaz", "ar": "الملز" },
+    "status": "rejected",
+    "priority": "low",
+    "channel": "center",
+    "assigneeId": "st-02",
+    "submittedAt": "2026-04-05T11:32:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["new-application"],
+    "notes": "Missing utility disconnection proof.",
+    "attachments": [{ "id": "att-0102-1", "name": "ownership-deed.pdf", "sizeKB": 760 }]
+  },
+  {
+    "id": "REQ-2026-0103",
+    "serviceId": "svc-commercial-license",
+    "applicant": {
+      "name": { "en": "Mohammed Al-Shehri", "ar": "محمد الشهري" },
+      "nationalId": "1027459683",
+      "phone": "+966554192836"
+    },
+    "district": { "en": "Al-Naseem", "ar": "النسيم" },
+    "status": "approved",
+    "priority": "high",
+    "channel": "web",
+    "assigneeId": "st-03",
+    "submittedAt": "2026-04-08T14:05:00+03:00",
+    "neededBy": "2026-05-01",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["commercial", "new-application"],
+    "notes": "Retail shop on King Abdullah Road frontage.",
+    "attachments": [{ "id": "att-0103-1", "name": "lease-contract.pdf", "sizeKB": 540 }]
+  },
+  {
+    "id": "REQ-2026-0104",
+    "serviceId": "svc-food-truck-license",
+    "applicant": {
+      "name": { "en": "Noura Al-Dossari", "ar": "نورة الدوسري" },
+      "nationalId": "1068215374",
+      "phone": "+966561748293"
+    },
+    "district": { "en": "Al-Rawdah", "ar": "الروضة" },
+    "status": "completed",
+    "priority": "normal",
+    "channel": "phone",
+    "assigneeId": "st-04",
+    "submittedAt": "2026-04-11T10:48:00+03:00",
+    "neededBy": null,
+    "quantity": 2,
+    "urgent": false,
+    "tags": ["commercial"],
+    "notes": "",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0105",
+    "serviceId": "svc-occupancy-certificate",
+    "applicant": {
+      "name": { "en": "Fahad Al-Harbi", "ar": "فهد الحربي" },
+      "nationalId": "1054938712",
+      "phone": "+966573926481"
+    },
+    "district": { "en": "Al-Sulaimaniyah", "ar": "السليمانية" },
+    "status": "approved",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": "st-05",
+    "submittedAt": "2026-04-14T08:27:00+03:00",
+    "neededBy": "2026-05-20",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential", "follow-up"],
+    "notes": "Final inspection passed on first visit.",
+    "attachments": [{ "id": "att-0105-1", "name": "supervision-report.pdf", "sizeKB": 1230 }]
+  },
+  {
+    "id": "REQ-2026-0106",
+    "serviceId": "svc-health-certificate",
+    "applicant": {
+      "name": { "en": "Reem Al-Mutairi", "ar": "ريم المطيري" },
+      "nationalId": "1081627395",
+      "phone": "+966582613947"
+    },
+    "district": { "en": "Al-Murabba", "ar": "المربع" },
+    "status": "rejected",
+    "priority": "low",
+    "channel": "center",
+    "assigneeId": "st-06",
+    "submittedAt": "2026-04-16T13:19:00+03:00",
+    "neededBy": null,
+    "quantity": 3,
+    "urgent": false,
+    "tags": ["new-application"],
+    "notes": "Medical exam results expired before review.",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0107",
+    "serviceId": "svc-site-inspection",
+    "applicant": {
+      "name": { "en": "Khalid Al-Ghamdi", "ar": "خالد الغامدي" },
+      "nationalId": "1039574826",
+      "phone": "+966594827136"
+    },
+    "district": { "en": "Al-Olaya", "ar": "العليا" },
+    "status": "approved",
+    "priority": "high",
+    "channel": "web",
+    "assigneeId": "st-07",
+    "submittedAt": "2026-04-19T15:42:00+03:00",
+    "neededBy": "2026-04-30",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection", "commercial"],
+    "notes": "Pre-excavation check for a tower project.",
+    "attachments": [{ "id": "att-0107-1", "name": "excavation-plan.pdf", "sizeKB": 2150 }]
+  },
+  {
+    "id": "REQ-2026-0108",
+    "serviceId": "svc-facility-safety-inspection",
+    "applicant": {
+      "name": { "en": "Hessa Al-Subaie", "ar": "حصة السبيعي" },
+      "nationalId": "1076283541",
+      "phone": "+966518365274"
+    },
+    "district": { "en": "Al-Malaz", "ar": "الملز" },
+    "status": "completed",
+    "priority": "normal",
+    "channel": "phone",
+    "assigneeId": "st-08",
+    "submittedAt": "2026-04-22T09:55:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection"],
+    "notes": "Compliance tag issued after the visit.",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0109",
+    "serviceId": "svc-building-permit",
+    "applicant": {
+      "name": { "en": "Turki Al-Anazi", "ar": "تركي العنزي" },
+      "nationalId": "1045761928",
+      "phone": "+966529481637"
+    },
+    "district": { "en": "Al-Naseem", "ar": "النسيم" },
+    "status": "approved",
+    "priority": "low",
+    "channel": "web",
+    "assigneeId": "st-09",
+    "submittedAt": "2026-04-25T12:08:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential", "new-application"],
+    "notes": "",
+    "attachments": [{ "id": "att-0109-1", "name": "architectural-drawings.pdf", "sizeKB": 3640 }]
+  },
+  {
+    "id": "REQ-2026-0110",
+    "serviceId": "svc-demolition-permit",
+    "applicant": {
+      "name": { "en": "Lama Al-Zahrani", "ar": "لمى الزهراني" },
+      "nationalId": "1062845973",
+      "phone": "+966547192583"
+    },
+    "district": { "en": "Al-Rawdah", "ar": "الروضة" },
+    "status": "rejected",
+    "priority": "normal",
+    "channel": "center",
+    "assigneeId": "st-10",
+    "submittedAt": "2026-04-28T16:21:00+03:00",
+    "neededBy": "2026-06-01",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential"],
+    "notes": "Structure is listed within a heritage zone.",
+    "attachments": [{ "id": "att-0110-1", "name": "safety-plan.pdf", "sizeKB": 880 }]
+  },
+  {
+    "id": "REQ-2026-0111",
+    "serviceId": "svc-commercial-license",
+    "applicant": {
+      "name": { "en": "Saad Al-Malki", "ar": "سعد المالكي" },
+      "nationalId": "1098374251",
+      "phone": "+966563728149"
+    },
+    "district": { "en": "Al-Sulaimaniyah", "ar": "السليمانية" },
+    "status": "completed",
+    "priority": "high",
+    "channel": "web",
+    "assigneeId": "st-01",
+    "submittedAt": "2026-05-02T10:36:00+03:00",
+    "neededBy": "2026-05-25",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["commercial", "renewal"],
+    "notes": "Annual renewal completed without site visit.",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0112",
+    "serviceId": "svc-food-truck-license",
+    "applicant": {
+      "name": { "en": "Aisha Al-Juhani", "ar": "عائشة الجهني" },
+      "nationalId": "1023684157",
+      "phone": "+966571845926"
+    },
+    "district": { "en": "Al-Murabba", "ar": "المربع" },
+    "status": "approved",
+    "priority": "urgent",
+    "channel": "phone",
+    "assigneeId": "st-02",
+    "submittedAt": "2026-05-04T08:12:00+03:00",
+    "neededBy": "2026-05-18",
+    "quantity": 2,
+    "urgent": true,
+    "tags": ["commercial", "expedite"],
+    "notes": "Expedited for the seasonal food festival.",
+    "attachments": [
+      { "id": "att-0112-1", "name": "vehicle-registration.pdf", "sizeKB": 310 },
+      { "id": "att-0112-2", "name": "truck-photos.zip", "sizeKB": 5120 }
+    ]
+  },
+  {
+    "id": "REQ-2026-0113",
+    "serviceId": "svc-occupancy-certificate",
+    "applicant": {
+      "name": { "en": "Bandar Al-Rashidi", "ar": "بندر الرشيدي" },
+      "nationalId": "1057219864",
+      "phone": "+966586139274"
+    },
+    "district": { "en": "Al-Olaya", "ar": "العليا" },
+    "status": "rejected",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": "st-03",
+    "submittedAt": "2026-05-06T13:47:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential", "follow-up"],
+    "notes": "Fire-safety systems not yet commissioned.",
+    "attachments": [{ "id": "att-0113-1", "name": "building-permit-copy.pdf", "sizeKB": 450 }]
+  },
+  {
+    "id": "REQ-2026-0114",
+    "serviceId": "svc-health-certificate",
+    "applicant": {
+      "name": { "en": "Munira Al-Khaldi", "ar": "منيرة الخالدي" },
+      "nationalId": "1084627193",
+      "phone": "+966595274816"
+    },
+    "district": { "en": "Al-Malaz", "ar": "الملز" },
+    "status": "in_review",
+    "priority": "low",
+    "channel": "center",
+    "assigneeId": "st-04",
+    "submittedAt": "2026-05-09T09:23:00+03:00",
+    "neededBy": null,
+    "quantity": 4,
+    "urgent": false,
+    "tags": ["new-application"],
+    "notes": "Awaiting lab results for two workers.",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0115",
+    "serviceId": "svc-site-inspection",
+    "applicant": {
+      "name": { "en": "Yousef Al-Amri", "ar": "يوسف العمري" },
+      "nationalId": "1036918245",
+      "phone": "+966514936582"
+    },
+    "district": { "en": "Al-Naseem", "ar": "النسيم" },
+    "status": "approved",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": "st-05",
+    "submittedAt": "2026-05-11T11:54:00+03:00",
+    "neededBy": "2026-05-22",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection", "residential"],
+    "notes": "",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0116",
+    "serviceId": "svc-facility-safety-inspection",
+    "applicant": {
+      "name": { "en": "Dana Al-Saleh", "ar": "دانة الصالح" },
+      "nationalId": "1071539826",
+      "phone": "+966532817495"
+    },
+    "district": { "en": "Al-Rawdah", "ar": "الروضة" },
+    "status": "rejected",
+    "priority": "high",
+    "channel": "phone",
+    "assigneeId": "st-06",
+    "submittedAt": "2026-05-13T15:09:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection", "commercial"],
+    "notes": "Facility license expired; renewal required first.",
+    "attachments": [{ "id": "att-0116-1", "name": "floor-plan.dwg", "sizeKB": 2780 }]
+  },
+  {
+    "id": "REQ-2026-0117",
+    "serviceId": "svc-building-permit",
+    "applicant": {
+      "name": { "en": "Nasser Al-Buqami", "ar": "ناصر البقمي" },
+      "nationalId": "1049283651",
+      "phone": "+966558149263"
+    },
+    "district": { "en": "Al-Sulaimaniyah", "ar": "السليمانية" },
+    "status": "in_review",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": "st-07",
+    "submittedAt": "2026-05-16T10:17:00+03:00",
+    "neededBy": "2026-06-30",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["commercial", "new-application"],
+    "notes": "Drawings under structural review.",
+    "attachments": [
+      { "id": "att-0117-1", "name": "structural-calculations.pdf", "sizeKB": 4210 },
+      { "id": "att-0117-2", "name": "site-plan.pdf", "sizeKB": 1660 }
+    ]
+  },
+  {
+    "id": "REQ-2026-0118",
+    "serviceId": "svc-demolition-permit",
+    "applicant": {
+      "name": { "en": "Jawaher Al-Tamimi", "ar": "جواهر التميمي" },
+      "nationalId": "1065827419",
+      "phone": "+966547382916"
+    },
+    "district": { "en": "Al-Murabba", "ar": "المربع" },
+    "status": "approved",
+    "priority": "low",
+    "channel": "center",
+    "assigneeId": "st-08",
+    "submittedAt": "2026-05-18T14:31:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential"],
+    "notes": "",
+    "attachments": [{ "id": "att-0118-1", "name": "disconnection-proof.pdf", "sizeKB": 290 }]
+  },
+  {
+    "id": "REQ-2026-0119",
+    "serviceId": "svc-commercial-license",
+    "applicant": {
+      "name": { "en": "Majed Al-Sahli", "ar": "ماجد السهلي" },
+      "nationalId": "1092364875",
+      "phone": "+966579218364"
+    },
+    "district": { "en": "Al-Olaya", "ar": "العليا" },
+    "status": "in_review",
+    "priority": "urgent",
+    "channel": "web",
+    "assigneeId": "st-09",
+    "submittedAt": "2026-05-21T08:46:00+03:00",
+    "neededBy": "2026-06-12",
+    "quantity": 1,
+    "urgent": true,
+    "tags": ["commercial", "expedite", "new-application"],
+    "notes": "Investor opening tied to a signed lease date.",
+    "attachments": [{ "id": "att-0119-1", "name": "commercial-registration.pdf", "sizeKB": 380 }]
+  },
+  {
+    "id": "REQ-2026-0120",
+    "serviceId": "svc-food-truck-license",
+    "applicant": {
+      "name": { "en": "Lina Al-Nasser", "ar": "لينا الناصر" },
+      "nationalId": "1087421936",
+      "phone": "+966591647283"
+    },
+    "district": { "en": "Al-Malaz", "ar": "الملز" },
+    "status": "new",
+    "priority": "normal",
+    "channel": "web",
+    "assigneeId": null,
+    "submittedAt": "2026-05-24T12:39:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["commercial", "new-application"],
+    "notes": "",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0121",
+    "serviceId": "svc-occupancy-certificate",
+    "applicant": {
+      "name": { "en": "Sultan Al-Dawsari", "ar": "سلطان الدوسري" },
+      "nationalId": "1031759482",
+      "phone": "+966524718596"
+    },
+    "district": { "en": "Al-Naseem", "ar": "النسيم" },
+    "status": "in_review",
+    "priority": "urgent",
+    "channel": "center",
+    "assigneeId": "st-10",
+    "submittedAt": "2026-05-27T09:58:00+03:00",
+    "neededBy": "2026-06-15",
+    "quantity": 1,
+    "urgent": true,
+    "tags": ["residential", "expedite"],
+    "notes": "Family handover date depends on the certificate.",
+    "attachments": [{ "id": "att-0121-1", "name": "supervision-report.pdf", "sizeKB": 1540 }]
+  },
+  {
+    "id": "REQ-2026-0122",
+    "serviceId": "svc-health-certificate",
+    "applicant": {
+      "name": { "en": "Amal Al-Yami", "ar": "أمل اليامي" },
+      "nationalId": "1078536291",
+      "phone": "+966563491728"
+    },
+    "district": { "en": "Al-Rawdah", "ar": "الروضة" },
+    "status": "approved",
+    "priority": "high",
+    "channel": "phone",
+    "assigneeId": "st-01",
+    "submittedAt": "2026-05-29T11:26:00+03:00",
+    "neededBy": "2026-06-08",
+    "quantity": 5,
+    "urgent": false,
+    "tags": ["renewal"],
+    "notes": "Batch renewal for restaurant staff.",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0123",
+    "serviceId": "svc-site-inspection",
+    "applicant": {
+      "name": { "en": "Rakan Al-Shahrani", "ar": "راكان الشهراني" },
+      "nationalId": "1043692817",
+      "phone": "+966585273619"
+    },
+    "district": { "en": "Al-Sulaimaniyah", "ar": "السليمانية" },
+    "status": "new",
+    "priority": "low",
+    "channel": "web",
+    "assigneeId": null,
+    "submittedAt": "2026-06-02T15:33:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection"],
+    "notes": "",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0124",
+    "serviceId": "svc-facility-safety-inspection",
+    "applicant": {
+      "name": { "en": "Shaikha Al-Suwailem", "ar": "شيخة السويلم" },
+      "nationalId": "1069481253",
+      "phone": "+966517394852"
+    },
+    "district": { "en": "Al-Murabba", "ar": "المربع" },
+    "status": "in_review",
+    "priority": "normal",
+    "channel": "center",
+    "assigneeId": "st-07",
+    "submittedAt": "2026-06-04T10:02:00+03:00",
+    "neededBy": "2026-06-25",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["inspection", "commercial", "follow-up"],
+    "notes": "Re-inspection after corrective actions.",
+    "attachments": [{ "id": "att-0124-1", "name": "corrective-actions-report.pdf", "sizeKB": 970 }]
+  },
+  {
+    "id": "REQ-2026-0125",
+    "serviceId": "svc-building-permit",
+    "applicant": {
+      "name": { "en": "Ibrahim Al-Hazmi", "ar": "إبراهيم الحازمي" },
+      "nationalId": "1056274839",
+      "phone": "+966549182736"
+    },
+    "district": { "en": "Al-Olaya", "ar": "العليا" },
+    "status": "new",
+    "priority": "high",
+    "channel": "web",
+    "assigneeId": null,
+    "submittedAt": "2026-06-07T09:41:00+03:00",
+    "neededBy": "2026-07-10",
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["commercial", "new-application"],
+    "notes": "Mixed-use building on a corner plot.",
+    "attachments": [{ "id": "att-0125-1", "name": "concept-drawings.pdf", "sizeKB": 2980 }]
+  },
+  {
+    "id": "REQ-2026-0126",
+    "serviceId": "svc-demolition-permit",
+    "applicant": {
+      "name": { "en": "Maha Al-Ruwaili", "ar": "مها الرويلي" },
+      "nationalId": "1083915267",
+      "phone": "+966572638194"
+    },
+    "district": { "en": "Al-Malaz", "ar": "الملز" },
+    "status": "new",
+    "priority": "normal",
+    "channel": "phone",
+    "assigneeId": null,
+    "submittedAt": "2026-06-08T13:15:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["residential", "new-application"],
+    "notes": "",
+    "attachments": []
+  },
+  {
+    "id": "REQ-2026-0127",
+    "serviceId": "svc-commercial-license",
+    "applicant": {
+      "name": { "en": "Waleed Al-Bishi", "ar": "وليد البيشي" },
+      "nationalId": "1038264195",
+      "phone": "+966593715284"
+    },
+    "district": { "en": "Al-Naseem", "ar": "النسيم" },
+    "status": "new",
+    "priority": "urgent",
+    "channel": "web",
+    "assigneeId": null,
+    "submittedAt": "2026-06-09T16:48:00+03:00",
+    "neededBy": "2026-06-20",
+    "quantity": 1,
+    "urgent": true,
+    "tags": ["commercial", "expedite"],
+    "notes": "Pharmacy branch opening announced for late June.",
+    "attachments": [{ "id": "att-0127-1", "name": "lease-contract.pdf", "sizeKB": 620 }]
+  },
+  {
+    "id": "REQ-2026-0128",
+    "serviceId": "svc-food-truck-license",
+    "applicant": {
+      "name": { "en": "Afnan Al-Qurashi", "ar": "أفنان القرشي" },
+      "nationalId": "1074518629",
+      "phone": "+966536284917"
+    },
+    "district": { "en": "Al-Rawdah", "ar": "الروضة" },
+    "status": "new",
+    "priority": "low",
+    "channel": "web",
+    "assigneeId": null,
+    "submittedAt": "2026-06-10T08:54:00+03:00",
+    "neededBy": null,
+    "quantity": 1,
+    "urgent": false,
+    "tags": ["new-application"],
+    "notes": "",
+    "attachments": []
+  }
+]

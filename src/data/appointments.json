@@ -1,0 +1,162 @@
+[
+  {
+    "id": "apt-01",
+    "serviceId": "svc-building-permit",
+    "citizen": { "en": "Mishal Al-Ahmadi", "ar": "مشعل الأحمدي" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-06-10",
+    "time": "08:30",
+    "durationMin": 30,
+    "status": "booked"
+  },
+  {
+    "id": "apt-02",
+    "serviceId": "svc-commercial-license",
+    "citizen": { "en": "Rana Al-Faraj", "ar": "رنا الفرج" },
+    "center": { "en": "Downtown Center", "ar": "مركز وسط المدينة" },
+    "date": "2026-06-10",
+    "time": "10:00",
+    "durationMin": 45,
+    "status": "booked"
+  },
+  {
+    "id": "apt-03",
+    "serviceId": "svc-health-certificate",
+    "citizen": { "en": "Sami Al-Hudaithi", "ar": "سامي الحديثي" },
+    "center": { "en": "East Center", "ar": "مركز الشرق" },
+    "date": "2026-06-10",
+    "time": "11:15",
+    "durationMin": 15,
+    "status": "booked"
+  },
+  {
+    "id": "apt-04",
+    "serviceId": "svc-site-inspection",
+    "citizen": { "en": "Abeer Al-Mubarak", "ar": "عبير المبارك" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-06-10",
+    "time": "14:00",
+    "durationMin": 30,
+    "status": "booked"
+  },
+  {
+    "id": "apt-05",
+    "serviceId": "svc-occupancy-certificate",
+    "citizen": { "en": "Ziyad Al-Sultan", "ar": "زياد السلطان" },
+    "center": { "en": "Downtown Center", "ar": "مركز وسط المدينة" },
+    "date": "2026-06-10",
+    "time": "09:00",
+    "durationMin": 30,
+    "status": "completed"
+  },
+  {
+    "id": "apt-06",
+    "serviceId": "svc-food-truck-license",
+    "citizen": { "en": "Najwa Al-Hamdan", "ar": "نجوى الحمدان" },
+    "center": { "en": "East Center", "ar": "مركز الشرق" },
+    "date": "2026-06-08",
+    "time": "09:30",
+    "durationMin": 30,
+    "status": "completed"
+  },
+  {
+    "id": "apt-07",
+    "serviceId": "svc-demolition-permit",
+    "citizen": { "en": "Badr Al-Suhaibani", "ar": "بدر السحيباني" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-06-09",
+    "time": "13:00",
+    "durationMin": 45,
+    "status": "no_show"
+  },
+  {
+    "id": "apt-08",
+    "serviceId": "svc-facility-safety-inspection",
+    "citizen": { "en": "Hanan Al-Aqeel", "ar": "حنان العقيل" },
+    "center": { "en": "Downtown Center", "ar": "مركز وسط المدينة" },
+    "date": "2026-06-11",
+    "time": "10:30",
+    "durationMin": 30,
+    "status": "booked"
+  },
+  {
+    "id": "apt-09",
+    "serviceId": "svc-building-permit",
+    "citizen": { "en": "Talal Al-Mogren", "ar": "طلال المقرن" },
+    "center": { "en": "East Center", "ar": "مركز الشرق" },
+    "date": "2026-06-11",
+    "time": "15:00",
+    "durationMin": 15,
+    "status": "booked"
+  },
+  {
+    "id": "apt-10",
+    "serviceId": "svc-commercial-license",
+    "citizen": { "en": "Wafa Al-Senani", "ar": "وفاء السناني" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-06-12",
+    "time": "08:00",
+    "durationMin": 30,
+    "status": "booked"
+  },
+  {
+    "id": "apt-11",
+    "serviceId": "svc-health-certificate",
+    "citizen": { "en": "Anas Al-Tuwaijri", "ar": "أنس التويجري" },
+    "center": { "en": "Downtown Center", "ar": "مركز وسط المدينة" },
+    "date": "2026-06-13",
+    "time": "12:30",
+    "durationMin": 15,
+    "status": "cancelled"
+  },
+  {
+    "id": "apt-12",
+    "serviceId": "svc-occupancy-certificate",
+    "citizen": { "en": "Salwa Al-Mazrou", "ar": "سلوى المزروع" },
+    "center": { "en": "East Center", "ar": "مركز الشرق" },
+    "date": "2026-06-14",
+    "time": "11:00",
+    "durationMin": 45,
+    "status": "booked"
+  },
+  {
+    "id": "apt-13",
+    "serviceId": "svc-site-inspection",
+    "citizen": { "en": "Adel Al-Khudair", "ar": "عادل الخضير" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-05-27",
+    "time": "10:00",
+    "durationMin": 30,
+    "status": "completed"
+  },
+  {
+    "id": "apt-14",
+    "serviceId": "svc-food-truck-license",
+    "citizen": { "en": "Nada Al-Rasheed", "ar": "ندى الرشيد" },
+    "center": { "en": "Downtown Center", "ar": "مركز وسط المدينة" },
+    "date": "2026-05-29",
+    "time": "14:30",
+    "durationMin": 30,
+    "status": "cancelled"
+  },
+  {
+    "id": "apt-15",
+    "serviceId": "svc-demolition-permit",
+    "citizen": { "en": "Faris Al-Olayan", "ar": "فارس العليان" },
+    "center": { "en": "East Center", "ar": "مركز الشرق" },
+    "date": "2026-06-16",
+    "time": "09:00",
+    "durationMin": 45,
+    "status": "booked"
+  },
+  {
+    "id": "apt-16",
+    "serviceId": "svc-facility-safety-inspection",
+    "citizen": { "en": "Layan Al-Babtain", "ar": "ليان البابطين" },
+    "center": { "en": "North Center", "ar": "مركز الشمال" },
+    "date": "2026-06-17",
+    "time": "13:30",
+    "durationMin": 30,
+    "status": "booked"
+  }
+]

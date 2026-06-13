@@ -1,0 +1,537 @@
+[
+  {
+    "id": "svc-building-permit",
+    "slug": "building-permit",
+    "category": "permits",
+    "name": { "en": "Building Permit", "ar": "تصريح بناء" },
+    "summary": {
+      "en": "Apply for a permit to construct a new residential or commercial building within city limits.",
+      "ar": "تقدّم بطلب للحصول على تصريح لإنشاء مبنى سكني أو تجاري جديد داخل النطاق العمراني."
+    },
+    "description": {
+      "en": "The building permit authorizes construction of new residential or commercial structures in accordance with approved zoning regulations. Applications are reviewed by the technical office, and a site visit may be scheduled before approval. The permit is issued electronically once the fees are paid.",
+      "ar": "يُجيز تصريح البناء إنشاء المباني السكنية أو التجارية الجديدة وفقًا لاشتراطات التخطيط العمراني المعتمدة. تُراجع الطلبات من قِبل المكتب الفني، وقد تُحدَّد زيارة ميدانية للموقع قبل الموافقة. يُصدر التصريح إلكترونيًا فور سداد الرسوم."
+    },
+    "fee": 500,
+    "slaDays": 14,
+    "rating": 4.3,
+    "ratingsCount": 612,
+    "steps": [
+      {
+        "en": "Verify eligibility and prepare the land deed, approved architectural drawings, and a valid national ID.",
+        "ar": "تحقق من استيفاء الشروط وجهّز صك الأرض والمخططات المعمارية المعتمدة وهوية وطنية سارية."
+      },
+      {
+        "en": "Submit the application with the required documents through the portal or a service center.",
+        "ar": "قدّم الطلب مرفقًا بالمستندات المطلوبة عبر البوابة الإلكترونية أو أحد مراكز الخدمة."
+      },
+      {
+        "en": "The technical team reviews the drawings and conducts a site visit if required.",
+        "ar": "يراجع الفريق الفني المخططات ويجري زيارة ميدانية للموقع عند الحاجة."
+      },
+      {
+        "en": "Pay the fees and receive the building permit electronically.",
+        "ar": "سدّد الرسوم واستلم تصريح البناء إلكترونيًا."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "How long is the building permit valid?",
+          "ar": "ما مدة صلاحية تصريح البناء؟"
+        },
+        "a": {
+          "en": "The permit is valid for 3 years from the date of issuance and can be renewed once before it expires.",
+          "ar": "يسري التصريح لمدة 3 سنوات من تاريخ الإصدار، ويمكن تجديده مرة واحدة قبل انتهائه."
+        }
+      },
+      {
+        "q": {
+          "en": "Do I need a licensed engineering office?",
+          "ar": "هل يلزم التعاقد مع مكتب هندسي مرخّص؟"
+        },
+        "a": {
+          "en": "Yes, the architectural drawings must be prepared and stamped by a licensed engineering office.",
+          "ar": "نعم، يجب إعداد المخططات المعمارية واعتمادها من مكتب هندسي مرخّص."
+        }
+      },
+      {
+        "q": {
+          "en": "Can I amend the drawings after submitting the application?",
+          "ar": "هل يمكن تعديل المخططات بعد تقديم الطلب؟"
+        },
+        "a": {
+          "en": "Amendments are allowed before the technical review is completed; afterwards a new revision request is required.",
+          "ar": "يُسمح بالتعديل قبل اكتمال المراجعة الفنية، وبعد ذلك يلزم تقديم طلب تعديل جديد."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-demolition-permit",
+    "slug": "demolition-permit",
+    "category": "permits",
+    "name": { "en": "Demolition Permit", "ar": "تصريح هدم" },
+    "summary": {
+      "en": "Obtain authorization to safely demolish an existing structure before redevelopment.",
+      "ar": "احصل على إذن لهدم منشأة قائمة بطريقة آمنة قبل إعادة تطوير الموقع."
+    },
+    "description": {
+      "en": "The demolition permit ensures that the removal of existing structures is carried out safely and in compliance with environmental and utility-disconnection requirements. A safety plan from a certified contractor is mandatory, and the site is inspected before the permit is granted.",
+      "ar": "يضمن تصريح الهدم تنفيذ إزالة المنشآت القائمة بأمان وبما يتوافق مع الاشتراطات البيئية ومتطلبات فصل الخدمات. ويُشترط تقديم خطة سلامة من مقاول معتمد، كما يُعاين الموقع قبل منح التصريح."
+    },
+    "fee": 750,
+    "slaDays": 21,
+    "rating": 3.9,
+    "ratingsCount": 184,
+    "steps": [
+      {
+        "en": "Confirm ownership and prepare the deed, utility disconnection proofs, and the contractor's safety plan.",
+        "ar": "تأكد من إثبات الملكية وجهّز الصك ومستندات فصل الخدمات وخطة السلامة المقدمة من المقاول."
+      },
+      {
+        "en": "Submit the demolition application with all supporting documents.",
+        "ar": "قدّم طلب الهدم مرفقًا بجميع المستندات الداعمة."
+      },
+      {
+        "en": "An inspector visits the site to verify safety measures and neighboring-property protection.",
+        "ar": "يزور المفتش الموقع للتحقق من إجراءات السلامة وحماية العقارات المجاورة."
+      },
+      {
+        "en": "Pay the fees and receive the demolition permit with its validity period.",
+        "ar": "سدّد الرسوم واستلم تصريح الهدم مع مدة سريانه."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "Is utility disconnection required before applying?",
+          "ar": "هل يلزم فصل الخدمات قبل تقديم الطلب؟"
+        },
+        "a": {
+          "en": "Yes, proof of electricity and water disconnection must be attached to the application.",
+          "ar": "نعم، يجب إرفاق ما يثبت فصل خدمتي الكهرباء والمياه مع الطلب."
+        }
+      },
+      {
+        "q": {
+          "en": "How long does the demolition permit remain valid?",
+          "ar": "ما مدة سريان تصريح الهدم؟"
+        },
+        "a": {
+          "en": "The permit is valid for 6 months and the work must start within 60 days of issuance.",
+          "ar": "يسري التصريح لمدة 6 أشهر، ويجب بدء الأعمال خلال 60 يومًا من تاريخ الإصدار."
+        }
+      },
+      {
+        "q": {
+          "en": "Who is responsible for debris removal?",
+          "ar": "من يتحمل مسؤولية إزالة مخلفات الهدم؟"
+        },
+        "a": {
+          "en": "The contractor must transfer all debris to approved disposal sites within the permit period.",
+          "ar": "يلتزم المقاول بنقل جميع المخلفات إلى مواقع الردم المعتمدة خلال مدة التصريح."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-commercial-license",
+    "slug": "commercial-license",
+    "category": "licenses",
+    "name": { "en": "Commercial License", "ar": "رخصة تجارية" },
+    "summary": {
+      "en": "Issue a municipal license to operate a shop or commercial establishment.",
+      "ar": "أصدر رخصة بلدية لمزاولة النشاط في محل أو منشأة تجارية."
+    },
+    "description": {
+      "en": "The commercial license allows businesses to operate from a fixed premises after verifying that the location meets municipal and safety requirements. The application is linked to the commercial registration, and the license must be renewed annually.",
+      "ar": "تتيح الرخصة التجارية مزاولة النشاط في مقر ثابت بعد التحقق من استيفاء الموقع للاشتراطات البلدية ومتطلبات السلامة. ويرتبط الطلب بالسجل التجاري، وتُجدَّد الرخصة سنويًا."
+    },
+    "fee": 1200,
+    "slaDays": 10,
+    "rating": 4.6,
+    "ratingsCount": 845,
+    "steps": [
+      {
+        "en": "Check the activity requirements and prepare the commercial registration and lease contract.",
+        "ar": "اطّلع على اشتراطات النشاط وجهّز السجل التجاري وعقد الإيجار."
+      },
+      {
+        "en": "Submit the licensing application and select the activity type and premises location.",
+        "ar": "قدّم طلب الترخيص وحدّد نوع النشاط وموقع المقر."
+      },
+      {
+        "en": "The premises is reviewed for compliance with municipal and civil-defense requirements.",
+        "ar": "يُراجع المقر للتحقق من مطابقته للاشتراطات البلدية ومتطلبات الدفاع المدني."
+      },
+      {
+        "en": "Pay the fees and receive the commercial license electronically.",
+        "ar": "سدّد الرسوم واستلم الرخصة التجارية إلكترونيًا."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "Is a commercial registration required first?",
+          "ar": "هل يلزم وجود سجل تجاري قبل التقديم؟"
+        },
+        "a": {
+          "en": "Yes, an active commercial registration matching the requested activity is required.",
+          "ar": "نعم، يُشترط وجود سجل تجاري ساري المفعول مطابق للنشاط المطلوب."
+        }
+      },
+      {
+        "q": { "en": "How often must the license be renewed?", "ar": "كم مرة يجب تجديد الرخصة؟" },
+        "a": {
+          "en": "The license is renewed annually, and renewal can be completed online before the expiry date.",
+          "ar": "تُجدَّد الرخصة سنويًا، ويمكن إتمام التجديد إلكترونيًا قبل تاريخ الانتهاء."
+        }
+      },
+      {
+        "q": {
+          "en": "Can I transfer the license to a new location?",
+          "ar": "هل يمكن نقل الرخصة إلى موقع جديد؟"
+        },
+        "a": {
+          "en": "Yes, a location-transfer request can be submitted, and the new premises must pass inspection.",
+          "ar": "نعم، يمكن تقديم طلب نقل موقع، على أن يجتاز المقر الجديد المعاينة."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-food-truck-license",
+    "slug": "food-truck-license",
+    "category": "licenses",
+    "name": { "en": "Food Truck License", "ar": "رخصة عربة طعام متنقلة" },
+    "summary": {
+      "en": "License a mobile food truck to operate in approved zones across the city.",
+      "ar": "رخّص عربة طعام متنقلة للعمل في المواقع المعتمدة داخل المدينة."
+    },
+    "description": {
+      "en": "This license permits the operation of mobile food trucks within designated zones and event sites. The vehicle must pass a health and safety inspection, and all food handlers must hold valid health certificates. Operating hours and locations are defined in the license terms.",
+      "ar": "تتيح هذه الرخصة تشغيل عربات الطعام المتنقلة في المواقع المخصصة وأماكن الفعاليات. ويجب أن تجتاز العربة فحص الصحة والسلامة، مع حصول جميع العاملين على شهادات صحية سارية. وتُحدَّد ساعات التشغيل والمواقع ضمن شروط الرخصة."
+    },
+    "fee": 900,
+    "slaDays": 12,
+    "rating": 4.4,
+    "ratingsCount": 327,
+    "steps": [
+      {
+        "en": "Review the approved zones and prepare the vehicle registration and staff health certificates.",
+        "ar": "اطّلع على المواقع المعتمدة وجهّز استمارة العربة والشهادات الصحية للعاملين."
+      },
+      {
+        "en": "Submit the application and select the preferred operating zones and hours.",
+        "ar": "قدّم الطلب وحدّد مواقع وساعات التشغيل المفضلة."
+      },
+      {
+        "en": "The truck undergoes a health and safety inspection at an approved center.",
+        "ar": "تخضع العربة لفحص الصحة والسلامة في أحد المراكز المعتمدة."
+      },
+      {
+        "en": "Pay the fees and receive the license sticker for the vehicle.",
+        "ar": "سدّد الرسوم واستلم ملصق الترخيص الخاص بالعربة."
+      }
+    ],
+    "faq": [
+      {
+        "q": { "en": "Where can the food truck operate?", "ar": "أين يمكن لعربة الطعام العمل؟" },
+        "a": {
+          "en": "Operation is limited to the zones listed in the license, in addition to licensed events.",
+          "ar": "يقتصر التشغيل على المواقع المحددة في الرخصة، إضافة إلى الفعاليات المرخّصة."
+        }
+      },
+      {
+        "q": {
+          "en": "Do all workers need health certificates?",
+          "ar": "هل يحتاج جميع العاملين إلى شهادات صحية؟"
+        },
+        "a": {
+          "en": "Yes, every food handler on the truck must hold a valid health certificate.",
+          "ar": "نعم، يجب أن يحمل كل عامل يتداول الأغذية في العربة شهادة صحية سارية."
+        }
+      },
+      {
+        "q": {
+          "en": "Is the inspection repeated at renewal?",
+          "ar": "هل يُعاد الفحص عند التجديد؟"
+        },
+        "a": {
+          "en": "Yes, the vehicle is re-inspected with every annual renewal of the license.",
+          "ar": "نعم، تُعاد معاينة العربة مع كل تجديد سنوي للرخصة."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-occupancy-certificate",
+    "slug": "occupancy-certificate",
+    "category": "certificates",
+    "name": { "en": "Occupancy Certificate", "ar": "شهادة إشغال" },
+    "summary": {
+      "en": "Certify that a completed building is safe and ready for occupancy.",
+      "ar": "وثّق جاهزية المبنى المكتمل وسلامته للإشغال."
+    },
+    "description": {
+      "en": "The occupancy certificate confirms that a completed building conforms to the approved permit and is safe to occupy. It is issued after a final inspection covering structure, utilities, and fire-safety systems. The certificate is required before connecting permanent utility services.",
+      "ar": "تؤكد شهادة الإشغال مطابقة المبنى المكتمل للتصريح المعتمد وسلامته للسكن أو الاستخدام. وتُصدر بعد معاينة نهائية تشمل الهيكل الإنشائي والخدمات وأنظمة السلامة من الحريق. وتُعد الشهادة شرطًا لتوصيل الخدمات الدائمة."
+    },
+    "fee": 350,
+    "slaDays": 7,
+    "rating": 4.1,
+    "ratingsCount": 256,
+    "steps": [
+      {
+        "en": "Ensure construction is complete and gather the building permit and engineering supervision report.",
+        "ar": "تأكد من اكتمال أعمال البناء وجهّز تصريح البناء وتقرير الإشراف الهندسي."
+      },
+      {
+        "en": "Submit the certificate request referencing the original building permit.",
+        "ar": "قدّم طلب الشهادة مع الإشارة إلى تصريح البناء الأصلي."
+      },
+      {
+        "en": "A final inspection verifies the structure, utilities, and fire-safety systems.",
+        "ar": "تُجرى معاينة نهائية للتحقق من الهيكل الإنشائي والخدمات وأنظمة السلامة من الحريق."
+      },
+      {
+        "en": "Pay the fees and receive the occupancy certificate electronically.",
+        "ar": "سدّد الرسوم واستلم شهادة الإشغال إلكترونيًا."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "When should I apply for the certificate?",
+          "ar": "متى ينبغي التقدم بطلب الشهادة؟"
+        },
+        "a": {
+          "en": "Apply after construction is fully complete and the supervising engineer signs off the works.",
+          "ar": "يُقدَّم الطلب بعد اكتمال أعمال البناء بالكامل واعتماد المهندس المشرف لها."
+        }
+      },
+      {
+        "q": {
+          "en": "What happens if the inspection finds violations?",
+          "ar": "ماذا يحدث إذا رصدت المعاينة مخالفات؟"
+        },
+        "a": {
+          "en": "A correction notice is issued, and a re-inspection is scheduled once the issues are fixed.",
+          "ar": "يُصدر إشعار بالتصحيح، وتُحدَّد معاينة جديدة بعد معالجة الملاحظات."
+        }
+      },
+      {
+        "q": {
+          "en": "Is the certificate required for utility connection?",
+          "ar": "هل الشهادة شرط لتوصيل الخدمات؟"
+        },
+        "a": {
+          "en": "Yes, permanent electricity and water connections require a valid occupancy certificate.",
+          "ar": "نعم، يتطلب توصيل الكهرباء والمياه بشكل دائم وجود شهادة إشغال سارية."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-health-certificate",
+    "slug": "health-certificate",
+    "category": "certificates",
+    "name": { "en": "Health Certificate", "ar": "شهادة صحية" },
+    "summary": {
+      "en": "Issue a health certificate for workers in food and public-health related activities.",
+      "ar": "أصدر شهادة صحية للعاملين في الأنشطة الغذائية والأنشطة ذات العلاقة بالصحة العامة."
+    },
+    "description": {
+      "en": "The health certificate is mandatory for workers in restaurants, food outlets, barbershops, and similar activities. It is granted after a medical examination at an approved clinic and completion of the food-safety awareness course. The certificate is valid for one year.",
+      "ar": "تُعد الشهادة الصحية إلزامية للعاملين في المطاعم ومنافذ بيع الأغذية وصالونات الحلاقة والأنشطة المشابهة. وتُمنح بعد إجراء الفحص الطبي في عيادة معتمدة واجتياز الدورة التثقيفية لسلامة الغذاء. وتسري الشهادة لمدة سنة واحدة."
+    },
+    "fee": 150,
+    "slaDays": 5,
+    "rating": 4.7,
+    "ratingsCount": 738,
+    "steps": [
+      {
+        "en": "Confirm the worker's activity requires a certificate and prepare the ID and a recent photo.",
+        "ar": "تأكد من أن نشاط العامل يتطلب شهادة صحية وجهّز الهوية وصورة شخصية حديثة."
+      },
+      {
+        "en": "Submit the application and book a medical examination at an approved clinic.",
+        "ar": "قدّم الطلب واحجز موعد الفحص الطبي في عيادة معتمدة."
+      },
+      {
+        "en": "Complete the medical tests and the food-safety awareness course.",
+        "ar": "أكمل الفحوصات الطبية واجتز الدورة التثقيفية لسلامة الغذاء."
+      },
+      {
+        "en": "Pay the fees and download the health certificate once the results are approved.",
+        "ar": "سدّد الرسوم وحمّل الشهادة الصحية فور اعتماد النتائج."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "How long is the health certificate valid?",
+          "ar": "ما مدة صلاحية الشهادة الصحية؟"
+        },
+        "a": {
+          "en": "The certificate is valid for 1 year and must be renewed with a new medical examination.",
+          "ar": "تسري الشهادة لمدة سنة واحدة، ويلزم تجديدها بإجراء فحص طبي جديد."
+        }
+      },
+      {
+        "q": {
+          "en": "Which activities require the certificate?",
+          "ar": "ما الأنشطة التي تتطلب الشهادة؟"
+        },
+        "a": {
+          "en": "Food preparation and sale, barbershops, beauty salons, and similar public-health activities.",
+          "ar": "أنشطة إعداد وبيع الأغذية، وصالونات الحلاقة والتجميل، والأنشطة المشابهة المتصلة بالصحة العامة."
+        }
+      },
+      {
+        "q": {
+          "en": "Can the awareness course be taken online?",
+          "ar": "هل يمكن حضور الدورة التثقيفية عن بُعد؟"
+        },
+        "a": {
+          "en": "Yes, the food-safety course is available online and the result is linked automatically to the application.",
+          "ar": "نعم، تتوفر دورة سلامة الغذاء عن بُعد وتُربط نتيجتها بالطلب تلقائيًا."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-site-inspection",
+    "slug": "site-inspection",
+    "category": "inspections",
+    "name": { "en": "Site Inspection", "ar": "معاينة موقع" },
+    "summary": {
+      "en": "Request an on-site inspection to verify compliance before starting or resuming works.",
+      "ar": "اطلب معاينة ميدانية للموقع للتحقق من الالتزام بالاشتراطات قبل بدء الأعمال أو استئنافها."
+    },
+    "description": {
+      "en": "The site inspection service dispatches a municipal inspector to verify that a site complies with permit conditions and zoning regulations. It is commonly requested before excavation, after violation corrections, or when a complaint is filed. The inspector's report is issued within the service period.",
+      "ar": "توفّر خدمة معاينة الموقع إيفاد مفتش بلدي للتحقق من التزام الموقع بشروط التصريح واشتراطات التخطيط العمراني. وتُطلب عادة قبل أعمال الحفر، أو بعد تصحيح المخالفات، أو عند ورود بلاغ. ويصدر تقرير المفتش خلال مدة الخدمة."
+    },
+    "fee": 0,
+    "slaDays": 3,
+    "rating": 4.0,
+    "ratingsCount": 98,
+    "steps": [
+      {
+        "en": "Verify the request type and prepare the permit number and site coordinates.",
+        "ar": "حدّد نوع المعاينة وجهّز رقم التصريح وإحداثيات الموقع."
+      },
+      {
+        "en": "Submit the inspection request and select a preferred visit window.",
+        "ar": "قدّم طلب المعاينة واختر الفترة الزمنية المفضلة للزيارة."
+      },
+      {
+        "en": "The inspector visits the site and documents the findings with photos.",
+        "ar": "يزور المفتش الموقع ويوثّق الملاحظات بالصور."
+      },
+      {
+        "en": "Receive the inspection report and any required corrective actions.",
+        "ar": "استلم تقرير المعاينة وما يلزم من إجراءات تصحيحية."
+      }
+    ],
+    "faq": [
+      {
+        "q": { "en": "Is the site inspection free of charge?", "ar": "هل معاينة الموقع مجانية؟" },
+        "a": {
+          "en": "Yes, the standard site inspection is provided at no cost.",
+          "ar": "نعم، تُقدَّم معاينة الموقع الاعتيادية دون رسوم."
+        }
+      },
+      {
+        "q": {
+          "en": "Do I need to be present during the visit?",
+          "ar": "هل يلزم حضوري أثناء الزيارة؟"
+        },
+        "a": {
+          "en": "The owner or an authorized representative must be available at the site during the visit window.",
+          "ar": "يجب تواجد المالك أو من ينوب عنه رسميًا في الموقع خلال فترة الزيارة."
+        }
+      },
+      {
+        "q": {
+          "en": "How soon is the report issued after the visit?",
+          "ar": "متى يصدر التقرير بعد الزيارة؟"
+        },
+        "a": {
+          "en": "The inspection report is usually issued within 1 business day of the visit.",
+          "ar": "يصدر تقرير المعاينة عادة خلال يوم عمل واحد من تاريخ الزيارة."
+        }
+      }
+    ]
+  },
+  {
+    "id": "svc-facility-safety-inspection",
+    "slug": "facility-safety-inspection",
+    "category": "inspections",
+    "name": { "en": "Facility Safety Inspection", "ar": "فحص سلامة المنشآت" },
+    "summary": {
+      "en": "Schedule a comprehensive safety inspection for commercial and public facilities.",
+      "ar": "احجز فحصًا شاملًا للسلامة في المنشآت التجارية والمرافق العامة."
+    },
+    "description": {
+      "en": "This inspection assesses fire-safety systems, emergency exits, electrical installations, and general safety compliance in commercial and public facilities. A detailed report is issued with a compliance score and corrective recommendations. Facilities passing the inspection receive a safety compliance tag.",
+      "ar": "يقيّم هذا الفحص أنظمة السلامة من الحريق ومخارج الطوارئ والتمديدات الكهربائية ومدى الالتزام العام باشتراطات السلامة في المنشآت التجارية والمرافق العامة. ويصدر تقرير مفصّل يتضمن درجة الالتزام والتوصيات التصحيحية. وتحصل المنشآت المجتازة للفحص على بطاقة الالتزام بالسلامة."
+    },
+    "fee": 400,
+    "slaDays": 6,
+    "rating": 3.8,
+    "ratingsCount": 142,
+    "steps": [
+      {
+        "en": "Review the safety requirements checklist and prepare the facility license and floor plans.",
+        "ar": "اطّلع على قائمة اشتراطات السلامة وجهّز رخصة المنشأة والمخططات الداخلية."
+      },
+      {
+        "en": "Submit the inspection request and book a visit slot.",
+        "ar": "قدّم طلب الفحص واحجز موعد الزيارة."
+      },
+      {
+        "en": "The safety team inspects fire systems, exits, and electrical installations on site.",
+        "ar": "يفحص فريق السلامة أنظمة الحريق والمخارج والتمديدات الكهربائية في الموقع."
+      },
+      {
+        "en": "Receive the compliance report and the safety tag upon passing.",
+        "ar": "استلم تقرير الالتزام وبطاقة السلامة عند اجتياز الفحص."
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "How often is the safety inspection required?",
+          "ar": "كم مرة يلزم إجراء فحص السلامة؟"
+        },
+        "a": {
+          "en": "High-occupancy facilities are inspected annually; other facilities every 2 years.",
+          "ar": "تُفحص المنشآت ذات الإشغال العالي سنويًا، وبقية المنشآت كل سنتين."
+        }
+      },
+      {
+        "q": {
+          "en": "What if the facility fails the inspection?",
+          "ar": "ماذا لو لم تجتز المنشأة الفحص؟"
+        },
+        "a": {
+          "en": "A corrective action plan is issued with a deadline, followed by a free re-inspection.",
+          "ar": "تُصدر خطة إجراءات تصحيحية بمهلة محددة، تليها إعادة فحص مجانية."
+        }
+      },
+      {
+        "q": {
+          "en": "Does the inspection disrupt facility operations?",
+          "ar": "هل يؤثر الفحص على عمل المنشأة؟"
+        },
+        "a": {
+          "en": "No, the visit is coordinated with the facility manager and conducted during working hours without closure.",
+          "ar": "لا، تُنسَّق الزيارة مع مدير المنشأة وتُجرى خلال ساعات العمل دون إغلاق."
+        }
+      }
+    ]
+  }
+]
