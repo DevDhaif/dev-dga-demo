@@ -22,14 +22,7 @@ import { useT } from '@/i18n';
 import { HELP_TOPICS } from './help/help-topics';
 import { TermsModal } from './help/TermsModal';
 
-const BANNER_SRC =
-  'data:image/svg+xml,' +
-  encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160">' +
-      '<rect width="640" height="160" fill="#DFF6E7"/>' +
-      '<circle cx="540" cy="40" r="90" fill="#B8EACB"/>' +
-      '<circle cx="80" cy="150" r="60" fill="#88D8AD"/></svg>',
-  );
+const BANNER_SRC = '/helpbanner.webp';
 
 export function Help() {
   const t = useT();
