@@ -39,6 +39,8 @@ describe('RequestForm', () => {
     expect(screen.getByText('You have unsaved changes.')).toBeInTheDocument();
   });
 
+  const NATIONAL_ID_ERROR = 'Enter a valid 10-digit National ID starting with 1.';
+
   it('next is disabled until the applicant step is valid', async () => {
     const user = userEvent.setup();
     renderNew();
@@ -48,6 +50,18 @@ describe('RequestForm', () => {
     await user.type(screen.getByLabelText(/National ID/), '1234567890');
     await user.type(screen.getByLabelText(/Mobile number/), '+966512345678');
     expect(next).toBeEnabled();
+    expect(screen.queryByText(NATIONAL_ID_ERROR)).not.toBeInTheDocument();
+  });
+
+  it('shows a National ID format error and keeps next disabled for an invalid id', async () => {
+    const user = userEvent.setup();
+    renderNew();
+    const next = screen.getByRole('button', { name: 'Next' });
+    await user.type(screen.getByLabelText(/Full name/), 'Test Person');
+    await user.type(screen.getByLabelText(/Mobile number/), '+966512345678');
+    await user.type(screen.getByLabelText(/National ID/), '2098765432');
+    expect(screen.getByText(NATIONAL_ID_ERROR)).toBeInTheDocument();
+    expect(next).toBeDisabled();
   });
 
   it('unknown id shows not-found', () => {

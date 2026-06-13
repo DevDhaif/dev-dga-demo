@@ -68,10 +68,13 @@ export function toForm(r: ServiceRequest): FormDraft {
   };
 }
 
+export const isValidNationalId = (v: string) => /^1\d{9}$/.test(v.trim());
+export const isValidPhone = (v: string) => v.trim().length >= 9;
+
 export function validateStep(d: FormDraft, step: number): boolean {
   switch (step) {
     case 0:
-      return d.name.trim() !== '' && /^1\d{9}$/.test(d.nationalId) && d.phone.trim().length >= 9;
+      return d.name.trim() !== '' && isValidNationalId(d.nationalId) && isValidPhone(d.phone);
     case 1:
       return d.serviceId !== '' && d.district !== '' && d.channel !== '';
     case 2:

@@ -1,6 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import { requests } from '@/data/fixtures';
-import { blankForm, toForm, validateStep, formReducer } from './form-state';
+import {
+  blankForm,
+  toForm,
+  validateStep,
+  formReducer,
+  isValidNationalId,
+  isValidPhone,
+} from './form-state';
 import { toRequest } from './form-request';
 
 const r0101 = requests.find((r) => r.id === 'REQ-2026-0101')!;
@@ -10,6 +17,22 @@ describe('form-state', () => {
     const d = blankForm();
     expect(validateStep(d, 0)).toBe(false);
     expect(validateStep(d, 3)).toBe(false);
+  });
+
+  it('isValidNationalId accepts 10 digits starting with 1, rejects others', () => {
+    expect(isValidNationalId('1098765432')).toBe(true);
+    expect(isValidNationalId(' 1098765432 ')).toBe(true);
+    expect(isValidNationalId('2098765432')).toBe(false);
+    expect(isValidNationalId('109876543')).toBe(false);
+    expect(isValidNationalId('10987654321')).toBe(false);
+    expect(isValidNationalId('')).toBe(false);
+  });
+
+  it('isValidPhone requires at least 9 characters', () => {
+    expect(isValidPhone('+966512345678')).toBe(true);
+    expect(isValidPhone('051234567')).toBe(true);
+    expect(isValidPhone('05123')).toBe(false);
+    expect(isValidPhone('')).toBe(false);
   });
 
   it('filled applicant step validates (10-digit national id starting 1)', () => {
