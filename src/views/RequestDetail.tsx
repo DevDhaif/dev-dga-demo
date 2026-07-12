@@ -1,6 +1,6 @@
 import { Link as RouterLink } from 'react-router-dom';
 import {
-  Badge,
+  Tag,
   Button,
   EmptyState,
   EmptyStateActions,
@@ -37,7 +37,7 @@ export function RequestDetail() {
       <header className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="m-0 flex items-center gap-3">
           <span dir="ltr">{c.request.id}</span>
-          <Badge variant={STATUS_BADGE[c.request.status]}>{t(STATUS_KEY[c.request.status])}</Badge>
+          <Tag variant={STATUS_BADGE[c.request.status]}>{t(STATUS_KEY[c.request.status])}</Tag>
         </h1>
         <ActionsBar c={c} />
       </header>

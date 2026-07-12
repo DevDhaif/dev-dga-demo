@@ -17,7 +17,7 @@ import {
   BreadcrumbPage,
   ScrollArea,
   Spinner,
-  Toaster,
+  NotificationToast,
   useSidebar,
 } from '@dev-dga/react';
 import { NAV_FOOTER, activeNavItem } from './nav';
@@ -92,7 +92,7 @@ export function AppShell() {
         </ScrollArea>
       </SidebarInset>
 
-      <Toaster position="bottom-end" />
+      <NotificationToast position="bottom-end" />
     </SidebarProvider>
   );
 }

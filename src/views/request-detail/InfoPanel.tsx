@@ -1,6 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 import {
-  Badge,
+  Tag,
+  StatusTag,
   DescriptionDetails,
   DescriptionItem,
   DescriptionList,
@@ -14,6 +15,8 @@ import {
   CHANNEL_KEY,
   PRIORITY_BADGE,
   PRIORITY_KEY,
+  STATUS_KEY,
+  STATUS_TONE,
 } from '@/data/labels';
 import type { ServiceRequest } from '@/data/types';
 import { tField, useLang, useT } from '@/i18n';
@@ -25,6 +28,12 @@ export function InfoPanel({ request }: { request: ServiceRequest }) {
 
   return (
     <DescriptionList divided data-testid="request-info">
+      <DescriptionItem>
+        <DescriptionTerm>{t('common.status')}</DescriptionTerm>
+        <DescriptionDetails>
+          <StatusTag tone={STATUS_TONE[request.status]}>{t(STATUS_KEY[request.status])}</StatusTag>
+        </DescriptionDetails>
+      </DescriptionItem>
       <DescriptionItem>
         <DescriptionTerm>{t('detail.applicant')}</DescriptionTerm>
         <DescriptionDetails>{tField(request.applicant.name, lang)}</DescriptionDetails>
@@ -45,7 +54,7 @@ export function InfoPanel({ request }: { request: ServiceRequest }) {
               <RouterLink to={`/services/${service.slug}`}>{tField(service.name, lang)}</RouterLink>
             </Link>
           ) : (
-            '—'
+            '-'
           )}
         </DescriptionDetails>
       </DescriptionItem>
@@ -60,9 +69,9 @@ export function InfoPanel({ request }: { request: ServiceRequest }) {
       <DescriptionItem>
         <DescriptionTerm>{t('detail.priority')}</DescriptionTerm>
         <DescriptionDetails>
-          <Badge size="sm" variant={PRIORITY_BADGE[request.priority]}>
+          <Tag size="sm" variant={PRIORITY_BADGE[request.priority]}>
             {t(PRIORITY_KEY[request.priority])}
-          </Badge>
+          </Tag>
         </DescriptionDetails>
       </DescriptionItem>
       <DescriptionItem>
@@ -72,7 +81,7 @@ export function InfoPanel({ request }: { request: ServiceRequest }) {
       <DescriptionItem>
         <DescriptionTerm>{t('detail.neededBy')}</DescriptionTerm>
         <DescriptionDetails>
-          {request.neededBy ? formatDate(request.neededBy) : '—'}
+          {request.neededBy ? formatDate(request.neededBy) : '-'}
         </DescriptionDetails>
       </DescriptionItem>
       <DescriptionItem>

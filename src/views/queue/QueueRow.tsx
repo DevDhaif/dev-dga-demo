@@ -3,7 +3,7 @@ import {
   TableRow,
   TableCell,
   Checkbox,
-  Badge,
+  Tag,
   Button,
   DropdownMenu,
   DropdownMenuTrigger,
@@ -44,16 +44,16 @@ export function QueueRow({ r, q }: { r: ServiceRequest; q: QueueController }) {
       <TableCell>{service ? tField(service.name, lang) : r.serviceId}</TableCell>
       <TableCell>{tField(r.district, lang)}</TableCell>
       <TableCell>
-        <Badge size="sm" variant={PRIORITY_BADGE[r.priority]}>
+        <Tag size="sm" variant={PRIORITY_BADGE[r.priority]}>
           {t(PRIORITY_KEY[r.priority])}
-        </Badge>
+        </Tag>
       </TableCell>
       <TableCell>{formatDate(r.submittedAt)}</TableCell>
       <TableCell>{assignee ? tField(assignee.name, lang) : t('queue.unassigned')}</TableCell>
       <TableCell>
-        <Badge size="sm" variant={STATUS_BADGE[r.status]}>
+        <Tag size="sm" variant={STATUS_BADGE[r.status]}>
           {t(STATUS_KEY[r.status])}
-        </Badge>
+        </Tag>
       </TableCell>
       <TableCell align="end">
         <DropdownMenu>

@@ -1,4 +1,4 @@
-import { SearchBox, Combobox, ComboboxItem, Select, SelectItem } from '@dev-dga/react';
+import { SearchBox, Dropdown, DropdownItem, Select, SelectItem } from '@dev-dga/react';
 import { services } from '@/data/fixtures';
 import { tField, useLang, useT } from '@/i18n';
 import type { QueueController } from './use-queue';
@@ -11,24 +11,25 @@ export function QueueToolbar({ q }: { q: QueueController }) {
     <div className="flex flex-wrap items-end gap-3">
       <div className="min-w-48 flex-1">
         <SearchBox
+          voiceSearch={false}
           value={q.ui.query}
           onChange={(e) => q.send({ type: 'setQuery', query: e.target.value })}
           placeholder={t('queue.searchPlaceholder')}
           aria-label={t('topbar.search')}
         />
       </div>
-      <Combobox
+      <Dropdown
         label={t('queue.filter.service')}
         value={q.ui.serviceId}
         onValueChange={(v) => q.send({ type: 'setService', serviceId: v })}
       >
-        <ComboboxItem value="all">{t('common.all')}</ComboboxItem>
+        <DropdownItem value="all">{t('common.all')}</DropdownItem>
         {services.map((s) => (
-          <ComboboxItem key={s.id} value={s.id} keywords={[s.name.en, s.name.ar]}>
+          <DropdownItem key={s.id} value={s.id} keywords={[s.name.en, s.name.ar]}>
             {tField(s.name, lang)}
-          </ComboboxItem>
+          </DropdownItem>
         ))}
-      </Combobox>
+      </Dropdown>
       <Select
         label={t('queue.pageSize')}
         value={String(q.ui.pageSize)}

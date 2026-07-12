@@ -6,7 +6,7 @@ import {
   DrawerBody,
   DrawerClose,
   Button,
-  Input,
+  TextInput,
   Select,
   SelectItem,
   DatePicker,
@@ -30,7 +30,7 @@ export function BookDrawer({ a }: { a: AppointmentsController }) {
         </DrawerHeader>
         <DrawerBody>
           <div className="flex flex-col gap-3">
-            <Input
+            <TextInput
               label={t('apt.citizen')}
               value={b.citizen}
               onChange={(e) => set({ citizen: e.target.value })}

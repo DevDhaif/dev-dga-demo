@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import {
-  Combobox,
-  ComboboxItem,
+  Dropdown,
+  DropdownItem,
   EmptyState,
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
   SearchBox,
-  Stat,
+  Metric,
   Toggle,
 } from '@dev-dga/react';
 import { staff } from '@/data/fixtures';
@@ -42,12 +42,13 @@ export function StaffDirectory() {
     <div className="flex flex-col gap-4">
       <header className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="m-0">{t('staffdir.title')}</h1>
-        <Stat label={t('staffdir.headcount')} value={total.toLocaleString('en-US')} />
+        <Metric label={t('staffdir.headcount')} value={total.toLocaleString('en-US')} />
       </header>
 
       <div className="flex flex-wrap items-end gap-3">
         <div className="min-w-48 flex-1">
           <SearchBox
+            voiceSearch={false}
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
@@ -57,7 +58,7 @@ export function StaffDirectory() {
             aria-label={t('topbar.search')}
           />
         </div>
-        <Combobox
+        <Dropdown
           label={t('staffdir.department')}
           value={department}
           onValueChange={(v) => {
@@ -65,13 +66,13 @@ export function StaffDirectory() {
             setPage(1);
           }}
         >
-          <ComboboxItem value="all">{t('common.all')}</ComboboxItem>
+          <DropdownItem value="all">{t('common.all')}</DropdownItem>
           {DEPARTMENTS.map((d) => (
-            <ComboboxItem key={d} value={d}>
+            <DropdownItem key={d} value={d}>
               {t(DEPT_KEY[d])}
-            </ComboboxItem>
+            </DropdownItem>
           ))}
-        </Combobox>
+        </Dropdown>
         <Toggle
           pressed={showOffShift}
           onPressedChange={(p) => {

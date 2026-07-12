@@ -18,9 +18,8 @@ export function ServiceTestimonial() {
     <section className="flex flex-col gap-3" data-testid="service-testimonial">
       <h2 className="m-0">{t('service.testimonial')}</h2>
       <Quote
-        variant="testimonial"
         author={tField(TESTIMONIAL.author, lang)}
-        byline={tField(TESTIMONIAL.byline, lang)}
+        authorTitle={tField(TESTIMONIAL.byline, lang)}
       >
         {tField(TESTIMONIAL.text, lang)}
       </Quote>

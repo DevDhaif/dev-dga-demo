@@ -49,7 +49,7 @@ export function useRequestForm() {
     const next: UploadFile[] = accepted.map((f) => ({
       id: `${f.name}-${f.size}`,
       file: f,
-      status: 'pending',
+      status: 'success',
     }));
     setFiles((prev) => [...prev, ...next]);
   });

@@ -11,7 +11,7 @@ import {
   AvatarFallback,
   AvatarImage,
   Button,
-  Badge,
+  Tag,
 } from '@dev-dga/react';
 import { Moon, Search, Sun } from 'lucide-react';
 import { AVATAR_SRC } from './avatar';
@@ -35,6 +35,7 @@ export function Topbar() {
     >
       <div className="hidden max-w-80 min-w-0 flex-1 sm:block">
         <SearchBox
+          voiceSearch={false}
           placeholder={t('topbar.searchPlaceholder')}
           aria-label={t('topbar.search')}
           readOnly
@@ -68,9 +69,9 @@ export function Topbar() {
         </Button>
 
         <Button variant="ghost" size="sm" onClick={toggleDir} aria-label={t('topbar.toggleLang')}>
-          <Badge size="sm" variant="secondary">
+          <Tag size="sm" variant="secondary">
             {dir === 'rtl' ? 'AR' : 'EN'}
-          </Badge>
+          </Tag>
         </Button>
 
         <DropdownMenu>

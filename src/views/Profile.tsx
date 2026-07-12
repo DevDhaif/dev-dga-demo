@@ -3,7 +3,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-  Badge,
+  Tag,
   Button,
   Card,
   CardContent,
@@ -39,9 +39,9 @@ export function Profile() {
           </Avatar>
           <div className="flex flex-col gap-1">
             <strong className="text-lg">مدير النظام</strong>
-            <Badge size="sm" variant="primary-subtle">
+            <Tag size="sm" variant="primary-subtle">
               {t('account.roleValue')}
-            </Badge>
+            </Tag>
           </div>
         </CardContent>
       </Card>
@@ -69,15 +69,15 @@ export function Profile() {
             <DescriptionItem>
               <DescriptionTerm>{t('account.preferences')}</DescriptionTerm>
               <DescriptionDetails className="flex flex-wrap gap-2">
-                <Badge size="sm" variant="secondary" className="uppercase">
+                <Tag size="sm" variant="secondary" className="uppercase">
                   {mode}
-                </Badge>
-                <Badge size="sm" variant="secondary" className="uppercase">
+                </Tag>
+                <Tag size="sm" variant="secondary" className="uppercase">
                   {dir}
-                </Badge>
-                <Badge size="sm" variant="secondary">
+                </Tag>
+                <Tag size="sm" variant="secondary">
                   {t(`brand.${brand}`)}
-                </Badge>
+                </Tag>
               </DescriptionDetails>
             </DescriptionItem>
           </DescriptionList>

@@ -2,10 +2,11 @@ import {
   Button,
   SearchBox,
   Slider,
-  Tabs,
-  TabsList,
-  TabsTrigger,
-  TabsContent,
+  Filtration,
+  FiltrationPanel,
+  FiltrationSection,
+  FiltrationOptionList,
+  FiltrationOption,
   EmptyState,
   Pagination,
   PaginationContent,
@@ -38,6 +39,7 @@ export function DocumentCenter() {
       <div className="flex flex-wrap items-end gap-4">
         <div className="min-w-48 flex-1">
           <SearchBox
+            voiceSearch={false}
             value={d.query}
             onChange={(e) => d.setQuery(e.target.value)}
             placeholder={t('docs.searchPlaceholder')}
@@ -56,15 +58,26 @@ export function DocumentCenter() {
         </div>
       </div>
 
-      <Tabs value={d.kind} onValueChange={(v) => d.setKind(v as DocumentKind | 'all')}>
-        <TabsList>
-          {KINDS.map((k) => (
-            <TabsTrigger key={k} value={k}>
-              {k === 'all' ? t('common.all') : t(DOCKIND_KEY[k])}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-        <TabsContent value={d.kind} className="flex flex-col gap-4 pt-3">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+        <Filtration overlay={false}>
+          <FiltrationPanel aria-label={t('docs.filterKind')} className="lg:w-56 lg:shrink-0">
+            <FiltrationSection label={t('docs.filterKind')}>
+              <FiltrationOptionList
+                aria-label={t('docs.filterKind')}
+                value={d.kind}
+                onValueChange={(v) => d.setKind(v as DocumentKind | 'all')}
+              >
+                {KINDS.map((k) => (
+                  <FiltrationOption key={k} value={k}>
+                    {k === 'all' ? t('common.all') : t(DOCKIND_KEY[k])}
+                  </FiltrationOption>
+                ))}
+              </FiltrationOptionList>
+            </FiltrationSection>
+          </FiltrationPanel>
+        </Filtration>
+
+        <div className="flex flex-1 flex-col gap-4">
           {d.total === 0 ? <EmptyState title={t('docs.empty')} /> : <DocumentGrid d={d} />}
           {d.pageCount > 1 && (
             <Pagination aria-label={t('docs.title')}>
@@ -86,8 +99,8 @@ export function DocumentCenter() {
               </PaginationContent>
             </Pagination>
           )}
-        </TabsContent>
-      </Tabs>
+        </div>
+      </div>
 
       <DocumentDrawer d={d} />
       <UploadModal d={d} />

@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import {
-  Badge,
+  Tag,
   Button,
   Collapsible,
   CollapsibleTrigger,
   CollapsibleContent,
   Divider,
   FieldMessage,
+  HelpIcon,
   InputOTP,
   Switch,
   toast,
@@ -21,7 +22,10 @@ export function SecurityPanel() {
 
   return (
     <div className="flex max-w-xl flex-col gap-4" data-testid="security-panel">
-      <h2 className="m-0">{t('settings.2fa')}</h2>
+      <div className="flex items-center gap-1">
+        <h2 className="m-0">{t('settings.2fa')}</h2>
+        <HelpIcon label={t('common.moreInfo')}>{t('settings.2faHelp')}</HelpIcon>
+      </div>
       <Switch label={t('settings.2fa')} checked={twoFa} onCheckedChange={setTwoFa} />
       {twoFa && !enabled && (
         <div className="flex flex-col gap-3">
@@ -38,7 +42,7 @@ export function SecurityPanel() {
           />
         </div>
       )}
-      {enabled && <Badge variant="success">{t('settings.2faEnabled')}</Badge>}
+      {enabled && <Tag variant="success">{t('settings.2faEnabled')}</Tag>}
 
       <Divider />
 

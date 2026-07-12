@@ -1,6 +1,6 @@
 # Theming & tokens , controlling the look of `@dev-dga`
 
-Complete reference for everything a developer can customize in `@dev-dga` (v0.8.3). Components read
+Complete reference for everything a developer can customize in `@dev-dga` (v0.11.0). Components read
 CSS variables (`--ddga-*`); you change the look by overriding those variables. Names and values below
 are extracted from the installed packages , re-verify after an upgrade by grepping
 `node_modules/@dev-dga/css/dist/`.

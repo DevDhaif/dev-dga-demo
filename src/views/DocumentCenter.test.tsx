@@ -12,14 +12,13 @@ describe('DocumentCenter', () => {
   it('renders page 1 of the 16 fixtures (8 tiles) with pagination', () => {
     renderDocs();
     expect(within(screen.getByTestId('doc-grid')).getAllByRole('button').length).toBeGreaterThan(0);
-    // 16 docs, pageSize 8 -> 2 pages
     expect(screen.getByRole('link', { name: '2' })).toBeInTheDocument();
   });
 
-  it('kind tab narrows to the 7 pdf fixtures (single page)', async () => {
+  it('kind filter narrows to the 7 pdf fixtures (single page)', async () => {
     const user = userEvent.setup();
     renderDocs();
-    await user.click(screen.getByRole('tab', { name: 'PDF' }));
+    await user.click(screen.getByRole('radio', { name: 'PDF' }));
     expect(screen.queryByRole('link', { name: '2' })).not.toBeInTheDocument();
   });
 
@@ -41,7 +40,6 @@ describe('DocumentCenter', () => {
       new File([new Uint8Array(1024)], 'new-site-plan.pdf'),
     );
     await user.click(within(modal).getByRole('button', { name: 'Upload' }));
-    // fake progress runs at 60ms ticks -> completes ≈ 300ms
     await waitFor(
       () => expect(screen.queryByRole('dialog', { name: /Upload documents/ })).toBeNull(),
       {

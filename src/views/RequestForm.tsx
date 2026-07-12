@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import {
-  Alert,
-  AlertTitle,
-  AlertDescription,
+  InlineAlert,
   Button,
   EmptyState,
   Link,
@@ -53,10 +51,9 @@ export function RequestForm() {
       <FormChrome step={f.draft.step} onPreview={() => setTab('preview')} />
 
       {f.dirty && (
-        <Alert variant="warning">
-          <AlertTitle>{t('form.unsaved')}</AlertTitle>
-          <AlertDescription>{t('form.discard.body')}</AlertDescription>
-        </Alert>
+        <InlineAlert type="warning" title={t('form.unsaved')}>
+          {t('form.discard.body')}
+        </InlineAlert>
       )}
 
       <Tabs value={tab} onValueChange={setTab}>

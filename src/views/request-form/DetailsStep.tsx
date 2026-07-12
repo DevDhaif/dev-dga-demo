@@ -1,14 +1,14 @@
 import {
   Select,
   SelectItem,
-  Combobox,
-  ComboboxItem,
+  Dropdown,
+  DropdownItem,
   RadioGroup,
   Radio,
   DatePicker,
   NumberInput,
-  ToggleGroup,
-  ToggleGroupItem,
+  ContentSwitcher,
+  ContentSwitcherItem,
   Switch,
   Tooltip,
   TooltipTrigger,
@@ -45,17 +45,17 @@ export function DetailsStep({ f }: { f: RequestFormController }) {
           </SelectItem>
         ))}
       </Select>
-      <Combobox
+      <Dropdown
         label={t('form.details.district')}
         value={f.draft.district}
         onValueChange={(v) => set({ district: v })}
       >
         {DISTRICTS.map((d) => (
-          <ComboboxItem key={d.en} value={d.en} keywords={[d.en, d.ar]}>
+          <DropdownItem key={d.en} value={d.en} keywords={[d.en, d.ar]}>
             {tField(d, lang)}
-          </ComboboxItem>
+          </DropdownItem>
         ))}
-      </Combobox>
+      </Dropdown>
       {service && (
         <p className="sm:col-span-2 m-0 text-(--ddga-color-muted-foreground)">
           {t('form.fee')}: {t('form.sar', { n: service.fee.toLocaleString('en-US') })} ·{' '}
@@ -86,8 +86,7 @@ export function DetailsStep({ f }: { f: RequestFormController }) {
         />
       </div>
       <div className="flex flex-wrap items-center gap-4 sm:col-span-2">
-        <ToggleGroup
-          type="single"
+        <ContentSwitcher
           value={f.draft.priority}
           onValueChange={(v) =>
             v && f.mark(() => f.send({ type: 'setPriority', priority: v as Priority }))()
@@ -95,11 +94,11 @@ export function DetailsStep({ f }: { f: RequestFormController }) {
           aria-label={t('form.details.priority')}
         >
           {PRIORITIES.map((p) => (
-            <ToggleGroupItem key={p} value={p}>
+            <ContentSwitcherItem key={p} value={p}>
               {t(PRIORITY_KEY[p])}
-            </ToggleGroupItem>
+            </ContentSwitcherItem>
           ))}
-        </ToggleGroup>
+        </ContentSwitcher>
         <Tooltip>
           <TooltipTrigger asChild>
             <span>

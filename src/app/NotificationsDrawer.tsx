@@ -11,13 +11,9 @@ import {
   EmptyStateDescription,
   EmptyStateMedia,
   EmptyStateTitle,
-  List,
-  ListItem,
-  ListItemAction,
-  ListItemContent,
-  ListItemIcon,
 } from '@dev-dga/react';
 import { Bell, BellOff, Check, CalendarCheck, FileCheck, FileUp, Inbox } from 'lucide-react';
+import { RowList, RowItem } from '@/components/RowList';
 import type { ActivityKind } from '@/data/types';
 import { formatDateTime } from '@/data/labels';
 import { unreadActivity } from '@/store/selectors';
@@ -71,19 +67,16 @@ export function NotificationsDrawer() {
               <EmptyStateDescription>{t('notif.emptyDesc')}</EmptyStateDescription>
             </EmptyState>
           ) : (
-            <List>
+            <RowList>
               {unread.map((event) => {
                 const Icon = KIND_ICON[event.kind] ?? Bell;
                 return (
-                  <ListItem key={event.id}>
-                    <ListItemIcon>
-                      <Icon size={18} aria-hidden />
-                    </ListItemIcon>
-                    <ListItemContent
-                      primary={tField(event.text, lang)}
-                      secondary={formatDateTime(event.at)}
-                    />
-                    <ListItemAction>
+                  <RowItem
+                    key={event.id}
+                    icon={<Icon size={18} aria-hidden />}
+                    primary={tField(event.text, lang)}
+                    secondary={formatDateTime(event.at)}
+                    trailing={
                       <Button
                         variant="ghost"
                         size="icon"
@@ -92,11 +85,11 @@ export function NotificationsDrawer() {
                       >
                         <Check size={16} />
                       </Button>
-                    </ListItemAction>
-                  </ListItem>
+                    }
+                  />
                 );
               })}
-            </List>
+            </RowList>
           )}
         </DrawerBody>
         <DrawerFooter>

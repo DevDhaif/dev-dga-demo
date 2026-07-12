@@ -1,6 +1,6 @@
 import {
   AspectRatio,
-  Badge,
+  Tag,
   Card,
   CardContent,
   Button,
@@ -59,9 +59,9 @@ export function DocumentGrid({ d }: { d: DocumentsController }) {
                 <span className="truncate">{tField(doc.title, lang)}</span>
               </Button>
               <div className="flex items-center justify-between gap-2">
-                <Badge size="sm" variant="secondary-subtle">
+                <Tag size="sm" variant="secondary-subtle">
                   {t(DOCKIND_KEY[doc.kind])}
-                </Badge>
+                </Tag>
                 <QuickInfo doc={doc} />
               </div>
             </CardContent>

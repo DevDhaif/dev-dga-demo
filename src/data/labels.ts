@@ -8,7 +8,7 @@ import type {
 } from './types';
 import type { I18nKey } from '@/i18n';
 
-export type BadgeVariant =
+export type TagVariant =
   | 'primary'
   | 'secondary'
   | 'outline'
@@ -31,12 +31,22 @@ export const STATUS_KEY: Record<RequestStatus, I18nKey> = {
   completed: 'status.completed',
 };
 
-export const STATUS_BADGE: Record<RequestStatus, BadgeVariant> = {
+export const STATUS_BADGE: Record<RequestStatus, TagVariant> = {
   new: 'info',
   in_review: 'warning',
   approved: 'success',
   rejected: 'destructive-subtle',
   completed: 'secondary',
+};
+
+export type StatusTagTone = 'neutral' | 'info' | 'success' | 'error' | 'warning';
+
+export const STATUS_TONE: Record<RequestStatus, StatusTagTone> = {
+  new: 'info',
+  in_review: 'warning',
+  approved: 'success',
+  rejected: 'error',
+  completed: 'neutral',
 };
 
 export const PRIORITY_KEY: Record<Priority, I18nKey> = {
@@ -46,7 +56,7 @@ export const PRIORITY_KEY: Record<Priority, I18nKey> = {
   urgent: 'priority.urgent',
 };
 
-export const PRIORITY_BADGE: Record<Priority, BadgeVariant> = {
+export const PRIORITY_BADGE: Record<Priority, TagVariant> = {
   low: 'secondary-subtle',
   normal: 'secondary',
   high: 'warning-subtle',
@@ -79,7 +89,7 @@ export const APTSTATUS_KEY: Record<AppointmentStatus, I18nKey> = {
   no_show: 'aptstatus.no_show',
 };
 
-export const APTSTATUS_BADGE: Record<AppointmentStatus, BadgeVariant> = {
+export const APTSTATUS_BADGE: Record<AppointmentStatus, TagVariant> = {
   booked: 'info',
   completed: 'success',
   cancelled: 'secondary',

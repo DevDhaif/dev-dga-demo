@@ -1,8 +1,8 @@
 import {
-  Combobox,
-  ComboboxGroup,
-  ComboboxItem,
-  ComboboxSeparator,
+  Dropdown,
+  DropdownGroup,
+  DropdownItem,
+  DropdownSeparator,
   Menubar,
   MenubarCheckboxItem,
   MenubarContent,
@@ -32,19 +32,19 @@ export function LogToolbar({
   return (
     <div className="flex flex-wrap items-end justify-between gap-3">
       <div className="min-w-56">
-        <Combobox
+        <Dropdown
           label={t('activity.colModule')}
           value={view.module}
           onValueChange={(v) => onChange({ module: v as LogView['module'] })}
         >
-          <ComboboxItem value="all">{t('common.all')}</ComboboxItem>
-          <ComboboxSeparator />
-          <ComboboxGroup heading={t('activity.modules')}>
-            <ComboboxItem value="requests">{t('nav.requests')}</ComboboxItem>
-            <ComboboxItem value="appointments">{t('nav.appointments')}</ComboboxItem>
-            <ComboboxItem value="documents">{t('nav.documents')}</ComboboxItem>
-          </ComboboxGroup>
-        </Combobox>
+          <DropdownItem value="all">{t('common.all')}</DropdownItem>
+          <DropdownSeparator />
+          <DropdownGroup heading={t('activity.modules')}>
+            <DropdownItem value="requests">{t('nav.requests')}</DropdownItem>
+            <DropdownItem value="appointments">{t('nav.appointments')}</DropdownItem>
+            <DropdownItem value="documents">{t('nav.documents')}</DropdownItem>
+          </DropdownGroup>
+        </Dropdown>
       </div>
 
       <Menubar>

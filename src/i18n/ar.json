@@ -365,5 +365,19 @@
   "settings.dangerHelp": "إجراءات لا يمكن التراجع عنها في مساحة العمل هذه.",
   "settings.resetData": "إعادة تعيين بيانات العرض",
   "settings.toast.saved": "تم حفظ الإعدادات",
-  "stub.underConstruction": "هذه الصفحة قيد الإنشاء."
+  "stub.underConstruction": "هذه الصفحة قيد الإنشاء.",
+  "common.moreInfo": "مزيد من المعلومات",
+  "carousel.previous": "السابق",
+  "carousel.next": "التالي",
+  "catalog.quickFilter": "تصفية سريعة حسب الفئة",
+  "docs.filterKind": "نوع الملف",
+  "help.browseTopics": "تصفح كل المواضيع",
+  "help.api.title": "واجهة المطورين",
+  "help.api.desc": "استعلم عن واجهة الطلبات باستخدام رمز الوصول.",
+  "help.api.copy": "نسخ الرمز",
+  "help.api.copied": "تم النسخ",
+  "help.verify.aria": "التحقق من الموقع الحكومي",
+  "help.verify.statement": "خدمة حكومية مسجّلة لدى هيئة الحكومة الرقمية.",
+  "help.verify.trigger": "كيف تتحقق؟",
+  "help.verify.regLabel": "مسجّلة لدى هيئة الحكومة الرقمية:"
 }

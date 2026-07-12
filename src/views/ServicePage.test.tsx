@@ -4,8 +4,6 @@ import { axe } from 'vitest-axe';
 import { renderView } from '@/test/render';
 import { ServicePage } from './ServicePage';
 
-// Pinned from src/data/services.json -> building-permit:
-// fee 500, slaDays 14, rating 4.3, 4 steps, 3 FAQ items.
 function renderPage(slug: string, dir: 'ltr' | 'rtl' = 'ltr') {
   return renderView(<ServicePage />, {
     dir,
@@ -23,7 +21,7 @@ describe('ServicePage', () => {
     expect(screen.getByText(/Apply for a permit to construct/)).toBeInTheDocument();
 
     const facts = within(screen.getByTestId('service-facts'));
-    expect(facts.getByText('500 SAR')).toBeInTheDocument();
+    expect(facts.getByText('500')).toBeInTheDocument();
     expect(facts.getByText('14 days')).toBeInTheDocument();
     expect(facts.getByRole('img', { name: '4.3 out of 5 stars' })).toBeInTheDocument();
 
@@ -35,7 +33,6 @@ describe('ServicePage', () => {
     expect(faq.getAllByRole('button')).toHaveLength(3);
     expect(faq.getByText('How long is the building permit valid?')).toBeInTheDocument();
 
-    // related: same-category sibling first, current excluded
     const related = within(screen.getByTestId('related-services'));
     expect(related.getByText('Demolition Permit')).toBeInTheDocument();
     expect(related.queryByText('Building Permit')).not.toBeInTheDocument();

@@ -7,7 +7,7 @@ import {
   DrawerBody,
   DrawerClose,
   Button,
-  Badge,
+  Tag,
   Modal,
   ModalContent,
   ModalHeader,
@@ -51,9 +51,9 @@ export function AppointmentDrawer({ a }: { a: AppointmentsController }) {
                   {t('apt.time')}: {formatDate(apt.date)} · {apt.time} ·{' '}
                   {t('apt.minutes', { n: apt.durationMin })}
                 </p>
-                <Badge className="w-fit self-center" variant={APTSTATUS_BADGE[apt.status]}>
+                <Tag className="w-fit self-center" variant={APTSTATUS_BADGE[apt.status]}>
                   {t(APTSTATUS_KEY[apt.status])}
-                </Badge>
+                </Tag>
                 {apt.status === 'booked' && (
                   <Button variant="destructive" onClick={() => a.setCancelOpen(true)}>
                     {t('apt.cancel')}

@@ -3,7 +3,7 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  Badge,
+  Tag,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -54,13 +54,13 @@ export function WeekGrid({ a }: { a: AppointmentsController }) {
                       {apt.time} · {t('apt.minutes', { n: apt.durationMin })} ·{' '}
                       {tField(apt.center, lang)}
                     </span>
-                    <Badge
+                    <Tag
                       size="sm"
                       className="w-fit self-center"
                       variant={APTSTATUS_BADGE[apt.status]}
                     >
                       {t(APTSTATUS_KEY[apt.status])}
-                    </Badge>
+                    </Tag>
                     <Button size="sm" variant="secondary" onClick={() => a.setSelected(apt)}>
                       {t('common.view')}
                     </Button>

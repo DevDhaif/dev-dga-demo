@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
   FieldMessage,
-  Input,
+  TextInput,
 } from '@dev-dga/react';
 import { useAuth } from '@/app/use-auth';
 import { useT } from '@/i18n';
@@ -46,7 +46,7 @@ export function Login() {
         </CardHeader>
         <CardContent>
           <form className="flex flex-col gap-4" onSubmit={submit}>
-            <Input
+            <TextInput
               label={t('login.username')}
               value={username}
               onChange={(e) => {
@@ -56,7 +56,7 @@ export function Login() {
               autoComplete="username"
               required
             />
-            <Input
+            <TextInput
               label={t('login.password')}
               type="password"
               value={password}

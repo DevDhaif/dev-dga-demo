@@ -1,5 +1,5 @@
 import {
-  Badge,
+  Tag,
   Table,
   TableBody,
   TableCaption,
@@ -38,12 +38,7 @@ export function LogTable({ rows, total, view }: { rows: LogRow[]; total: number;
   const colCount = 3 + (view.cols.module ? 1 : 0) + (view.cols.ref ? 1 : 0);
 
   return (
-    <Table
-      size={view.density}
-      divided
-      aria-label={t('activity.title')}
-      data-testid="activity-table"
-    >
+    <Table size={view.density} aria-label={t('activity.title')} data-testid="activity-table">
       <TableCaption>{t('activity.caption')}</TableCaption>
       <TableHeader>
         <TableRow>
@@ -59,9 +54,9 @@ export function LogTable({ rows, total, view }: { rows: LogRow[]; total: number;
           <TableRow key={row.id}>
             <TableCell>{formatDateTime(row.at)}</TableCell>
             <TableCell>
-              <Badge size="sm" variant="secondary">
+              <Tag size="sm" variant="secondary">
                 {t(KIND_LABEL[row.kind])}
-              </Badge>
+              </Tag>
             </TableCell>
             <TableCell>{tField(row.subject, lang)}</TableCell>
             {view.cols.module && <TableCell>{t(MODULE_LABEL[row.module])}</TableCell>}

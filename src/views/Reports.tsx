@@ -8,8 +8,8 @@ import {
   DescriptionDetails,
   Divider,
   Progress,
-  StatGroup,
-  Stat,
+  MetricGroup,
+  Metric,
   Tabs,
   TabsList,
   TabsTrigger,
@@ -29,7 +29,8 @@ import { useT } from '@/i18n';
 import { dailyCounts } from './overview/overview-logic';
 import { statusShare, appointmentCounts, slaCompliance } from './reports/reports-logic';
 import { VolumesTable } from './reports/VolumesTable';
-import { TrendChart } from './reports/TrendChart';
+import { IntakeLine } from './reports/IntakeLine';
+import { StatusPie } from './reports/StatusPie';
 import { BarChart } from './reports/BarChart';
 
 const APT_BAR_COLOR = {
@@ -55,32 +56,24 @@ export function Reports() {
         <DateRangePicker label={t('overview.range')} value={range} onChange={setRange} />
       </header>
 
-      <StatGroup columns={4} data-testid="report-stats">
-        <Stat
-          variant="elevated"
+      <MetricGroup columns={4} data-testid="report-stats">
+        <Metric
           icon={<Inbox size={18} aria-hidden />}
           label={t('overview.kpi.open')}
           value={k.open.toLocaleString('en-US')}
         />
-        <Stat
-          variant="elevated"
+        <Metric
           icon={<Flame size={18} aria-hidden />}
           label={t('overview.kpi.urgent')}
           value={k.urgentOpen.toLocaleString('en-US')}
         />
-        <Stat
-          variant="elevated"
+        <Metric
           icon={<CircleCheck size={18} aria-hidden />}
           label={t('overview.kpi.completed')}
           value={k.completed.toLocaleString('en-US')}
         />
-        <Stat
-          variant="elevated"
-          icon={<Gauge size={18} aria-hidden />}
-          label={t('reports.sla')}
-          value={`${sla}%`}
-        />
-      </StatGroup>
+        <Metric icon={<Gauge size={18} aria-hidden />} label={t('reports.sla')} value={`${sla}%`} />
+      </MetricGroup>
 
       <div className="grid gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">
@@ -93,6 +86,7 @@ export function Reports() {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-3" data-testid="status-share">
+            <StatusPie shares={shares} />
             {shares.map((s) => (
               <div key={s.status} className="flex items-center gap-3">
                 <span className="w-28 shrink-0">{t(STATUS_KEY[s.status])}</span>
@@ -128,7 +122,7 @@ export function Reports() {
         <TabsContent value="requests" className="flex flex-col gap-4 pt-3">
           <h2 className="m-0">{t('reports.volumes')}</h2>
           <VolumesTable requests={state.requests} />
-          <TrendChart
+          <IntakeLine
             data={dailyCounts(
               state.requests.map((r) => r.submittedAt),
               DEMO_TODAY,

@@ -27,7 +27,7 @@ export function Overview() {
             {t('overview.subtitle', { entity: t('app.entity'), date: formatDate(DEMO_TODAY) })}
           </p>
         </div>
-        <DateRangePicker size="sm" label={t('overview.range')} value={range} onChange={setRange} />
+        <DateRangePicker size="md" label={t('overview.range')} value={range} onChange={setRange} />
       </div>
       <KpiRow
         kpis={kpis(state, DEMO_TODAY)}

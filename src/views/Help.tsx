@@ -13,14 +13,13 @@ import {
   CommandItem,
   CommandList,
   Quote,
-  QuoteAuthor,
-  QuoteCaption,
-  QuoteContent,
-  QuoteSource,
 } from '@dev-dga/react';
 import { useT } from '@/i18n';
 import { HELP_TOPICS } from './help/help-topics';
 import { TermsModal } from './help/TermsModal';
+import { TopicsMenu } from './help/TopicsMenu';
+import { ApiSnippet } from './help/ApiSnippet';
+import { VerificationStamp } from './help/VerificationStamp';
 
 const BANNER_SRC = '/helpbanner.webp';
 
@@ -31,7 +30,10 @@ export function Help() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="m-0">{t('help.title')}</h1>
+      <header className="flex flex-wrap items-center justify-between gap-3">
+        <h1 className="m-0">{t('help.title')}</h1>
+        <TopicsMenu onSelectTopic={setTopicId} />
+      </header>
 
       <Card>
         <CardImage src={BANNER_SRC} alt="" aspectRatio="21/9" className="max-h-40" />
@@ -78,12 +80,15 @@ export function Help() {
         </Card>
       </div>
 
-      <Quote>
-        <QuoteContent>{t('help.quote')}</QuoteContent>
-        <QuoteAuthor>{t('help.quoteAuthor')}</QuoteAuthor>
-        <QuoteSource>{t('help.quoteSource')}</QuoteSource>
-        <QuoteCaption>{t('help.quoteCaption')}</QuoteCaption>
+      <Quote
+        author={t('help.quoteAuthor')}
+        authorTitle={`${t('help.quoteCaption')} · ${t('help.quoteSource')}`}
+      >
+        {t('help.quote')}
       </Quote>
+
+      <ApiSnippet />
+      <VerificationStamp />
     </div>
   );
 }

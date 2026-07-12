@@ -7,6 +7,8 @@ workflows and per-request detail/comments, a multi-step intake form (incl. OTP v
 appointment scheduling, staff directory, document center, public service catalog, reports with
 live charts, an audit log, and a help center 17 views total.
 
+**Live demo:** https://dev-dga-demo.vercel.app — toggle the language / light-dark / brand color from the topbar.
+
 > **Sign in with `admin` / `password`** (static demo auth no backend anywhere).
 
 **Every one of the design system's component families is used in real composition**

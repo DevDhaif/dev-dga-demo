@@ -1,5 +1,5 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { Avatar, AvatarFallback, Badge, Card, CardContent, Rating, Link } from '@dev-dga/react';
+import { Avatar, AvatarFallback, Tag, Card, CardContent, Rating, Link } from '@dev-dga/react';
 import type { StaffMember } from '@/data/types';
 import { DEPT_KEY } from './staff-keys';
 import { tField, useLang, useT } from '@/i18n';
@@ -25,12 +25,12 @@ export function StaffCard({ m }: { m: StaffMember }) {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge size="sm" variant="secondary-subtle">
+          <Tag size="sm" variant="secondary-subtle">
             {t(DEPT_KEY[m.department])}
-          </Badge>
-          <Badge size="sm" variant={m.onShift ? 'success-subtle' : 'secondary'}>
+          </Tag>
+          <Tag size="sm" variant={m.onShift ? 'success-subtle' : 'secondary'}>
             {m.onShift ? t('staffdir.onShift') : t('staffdir.offShift')}
-          </Badge>
+          </Tag>
         </div>
         <div className="flex items-center gap-2">
           <Rating

@@ -1,17 +1,14 @@
 import {
-  Badge,
   Card,
   CardContent,
   CardHeader,
   CardIcon,
   CardTitle,
   EmptyState,
-  List,
-  ListItem,
-  ListItemAction,
-  ListItemContent,
+  Tag,
 } from '@dev-dga/react';
 import { CalendarDays } from 'lucide-react';
+import { RowList, RowItem } from '@/components/RowList';
 import { tField, useLang, useT } from '@/i18n';
 import { APTSTATUS_BADGE, APTSTATUS_KEY } from '@/data/labels';
 import { DEMO_TODAY } from '@/data/fixtures';
@@ -35,21 +32,20 @@ export function TodayScheduleCard({ className }: { className?: string }) {
       </CardHeader>
       <CardContent>
         {todays.length === 0 ? (
-          <EmptyState size="sm" title={t('overview.noAppointments')} />
+          <EmptyState size="md" title={t('overview.noAppointments')} />
         ) : (
-          <List variant="plain" divided>
+          <RowList divided>
             {todays.map((a) => (
-              <ListItem key={a.id}>
-                <ListItemContent
-                  primary={`${a.time} · ${tField(a.citizen, lang)}`}
-                  secondary={tField(a.center, lang)}
-                />
-                <ListItemAction>
-                  <Badge variant={APTSTATUS_BADGE[a.status]}>{t(APTSTATUS_KEY[a.status])}</Badge>
-                </ListItemAction>
-              </ListItem>
+              <RowItem
+                key={a.id}
+                primary={`${a.time} · ${tField(a.citizen, lang)}`}
+                secondary={tField(a.center, lang)}
+                trailing={
+                  <Tag variant={APTSTATUS_BADGE[a.status]}>{t(APTSTATUS_KEY[a.status])}</Tag>
+                }
+              />
             ))}
-          </List>
+          </RowList>
         )}
       </CardContent>
     </Card>

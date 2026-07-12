@@ -1,4 +1,4 @@
-import { Rating } from '@dev-dga/react';
+import { Rating, SaudiRiyal } from '@dev-dga/react';
 import type { Service } from '@/data/types';
 import { useT } from '@/i18n';
 
@@ -11,9 +11,7 @@ export function ServiceFacts({ service }: { service: Service }) {
     <div className="flex flex-wrap items-start gap-x-10 gap-y-3" data-testid="service-facts">
       <div className="flex flex-col gap-1">
         <span style={MUTED}>{t('service.fee')}</span>
-        <span className="font-semibold">
-          {t('form.sar', { n: service.fee.toLocaleString('en-US') })}
-        </span>
+        <SaudiRiyal className="font-semibold" value={service.fee} />
       </div>
       <div className="flex flex-col gap-1">
         <span style={MUTED}>{t('service.sla')}</span>

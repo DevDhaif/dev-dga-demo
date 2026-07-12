@@ -70,7 +70,7 @@ export function useDocuments() {
     setFiles((prev) => [
       ...prev,
       ...accepted.map(
-        (f): UploadFile => ({ id: `${f.name}-${f.size}`, file: f, status: 'pending' }),
+        (f): UploadFile => ({ id: `${f.name}-${f.size}`, file: f, status: 'success' }),
       ),
     ]);
 

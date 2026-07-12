@@ -1,7 +1,7 @@
 import {
   Button,
-  ToggleGroup,
-  ToggleGroupItem,
+  ContentSwitcher,
+  ContentSwitcherItem,
   Select,
   SelectItem,
   DatePicker,
@@ -29,15 +29,14 @@ export function Appointments() {
       </header>
 
       <div className="flex flex-wrap items-end gap-3">
-        <ToggleGroup
-          type="single"
+        <ContentSwitcher
           value={a.view}
           onValueChange={(v) => v && a.setView(v as 'week' | 'day')}
           aria-label={t('apt.title')}
         >
-          <ToggleGroupItem value="week">{t('apt.week')}</ToggleGroupItem>
-          <ToggleGroupItem value="day">{t('apt.day')}</ToggleGroupItem>
-        </ToggleGroup>
+          <ContentSwitcherItem value="week">{t('apt.week')}</ContentSwitcherItem>
+          <ContentSwitcherItem value="day">{t('apt.day')}</ContentSwitcherItem>
+        </ContentSwitcher>
         <DatePicker
           label={t('apt.jumpTo')}
           value={new Date(`${a.selectedDate}T00:00:00`)}

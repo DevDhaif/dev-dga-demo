@@ -6,8 +6,9 @@ import {
   MenubarContent,
   MenubarItem,
   MenubarSeparator,
-  Steps,
+  ProgressIndicator,
   Step,
+  StepContent,
   StepDescription,
   StepIndicator,
   StepTitle,
@@ -59,15 +60,17 @@ export function FormChrome({ step, onPreview }: Props) {
         </MenubarMenu>
       </Menubar>
 
-      <Steps>
+      <ProgressIndicator>
         {FORM_STEPS.map((s, i) => (
           <Step key={s} state={i < step ? 'completed' : i === step ? 'current' : 'upcoming'}>
             <StepIndicator step={i + 1} />
-            <StepTitle>{t(STEP_KEYS[i])}</StepTitle>
-            <StepDescription>{t(STEP_DESC_KEYS[i])}</StepDescription>
+            <StepContent>
+              <StepTitle>{t(STEP_KEYS[i])}</StepTitle>
+              <StepDescription>{t(STEP_DESC_KEYS[i])}</StepDescription>
+            </StepContent>
           </Step>
         ))}
-      </Steps>
+      </ProgressIndicator>
     </div>
   );
 }

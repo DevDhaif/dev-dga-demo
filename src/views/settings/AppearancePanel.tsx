@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Switch, Toggle, ToggleGroup, ToggleGroupItem } from '@dev-dga/react';
+import { ContentSwitcher, ContentSwitcherItem, Switch, Toggle } from '@dev-dga/react';
 import { useUiPrefsContext } from '@/app/ui-prefs-context';
 import { BRANDS, type Brand } from '@/app/use-ui-prefs';
 import { useT, type I18nKey } from '@/i18n';
@@ -33,19 +33,18 @@ export function AppearancePanel() {
       <Switch label={t('topbar.toggleLang')} checked={dir === 'rtl'} onCheckedChange={toggleDir} />
       <div className="flex flex-col gap-2">
         <span id="brand-label">{t('settings.brand')}</span>
-        <ToggleGroup
-          type="single"
+        <ContentSwitcher
           value={brand}
           onValueChange={(v) => v && setBrand(v as Brand)}
           aria-labelledby="brand-label"
         >
           {BRANDS.map((b) => (
-            <ToggleGroupItem key={b} value={b}>
+            <ContentSwitcherItem key={b} value={b}>
               <span aria-hidden className={`inline-block h-3 w-3 rounded-full ${BRAND_DOT[b]}`} />
               {t(BRAND_LABEL[b])}
-            </ToggleGroupItem>
+            </ContentSwitcherItem>
           ))}
-        </ToggleGroup>
+        </ContentSwitcher>
       </div>
       <div>
         <Toggle pressed={compact} onPressedChange={setCompact}>

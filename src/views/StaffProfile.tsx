@@ -2,13 +2,13 @@ import { useParams, Link as RouterLink } from 'react-router-dom';
 import {
   Avatar,
   AvatarFallback,
-  Badge,
+  Tag,
   EmptyState,
   Link,
   Quote,
   Rating,
-  StatGroup,
-  Stat,
+  MetricGroup,
+  Metric,
   Tabs,
   TabsList,
   TabsTrigger,
@@ -57,16 +57,16 @@ export function StaffProfile() {
             {tField(member.role, lang)} · {t(DEPT_KEY[member.department])}
           </p>
         </div>
-        <Badge variant={member.onShift ? 'success-subtle' : 'secondary'}>
+        <Tag variant={member.onShift ? 'success-subtle' : 'secondary'}>
           {member.onShift ? t('staffdir.onShift') : t('staffdir.offShift')}
-        </Badge>
+        </Tag>
       </header>
 
-      <StatGroup columns={3} data-testid="profile-stats">
-        <Stat label={t('profile.kpi.open')} value={workload.open.toLocaleString('en-US')} />
-        <Stat label={t('profile.kpi.resolved')} value={member.resolved.toLocaleString('en-US')} />
-        <Stat label={t('profile.kpi.rating')} value={member.rating.toFixed(1)} />
-      </StatGroup>
+      <MetricGroup columns={3} data-testid="profile-stats">
+        <Metric label={t('profile.kpi.open')} value={workload.open.toLocaleString('en-US')} />
+        <Metric label={t('profile.kpi.resolved')} value={member.resolved.toLocaleString('en-US')} />
+        <Metric label={t('profile.kpi.rating')} value={member.rating.toFixed(1)} />
+      </MetricGroup>
 
       <div className="flex items-center gap-2">
         <Rating
@@ -78,9 +78,7 @@ export function StaffProfile() {
         <span>{member.rating.toFixed(1)}</span>
       </div>
 
-      <Quote variant="testimonial" author={tField(member.name, lang)}>
-        {tField(member.quote, lang)}
-      </Quote>
+      <Quote author={tField(member.name, lang)}>{tField(member.quote, lang)}</Quote>
 
       <Tabs defaultValue="assignments">
         <TabsList>

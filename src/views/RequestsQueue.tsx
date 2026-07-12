@@ -7,8 +7,10 @@ import {
   TabsTrigger,
   TabsContent,
   EmptyState,
+  FloatingButton,
   Skeleton,
 } from '@dev-dga/react';
+import { Plus } from 'lucide-react';
 import type { RequestStatus } from '@/data/types';
 import { STATUS_KEY } from '@/data/labels';
 import { useT } from '@/i18n';
@@ -89,6 +91,15 @@ export function RequestsQueue() {
           setRejectOpen(false);
         }}
       />
+
+      <FloatingButton
+        asChild
+        icon={<Plus aria-hidden />}
+        aria-label={t('queue.newRequest')}
+        className="fixed bottom-6 end-6 z-20"
+      >
+        <RouterLink to="/requests/new" />
+      </FloatingButton>
     </div>
   );
 }

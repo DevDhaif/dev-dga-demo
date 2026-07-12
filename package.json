@@ -14,9 +14,9 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@dev-dga/css": "^0.11.0",
-    "@dev-dga/react": "^0.11.0",
-    "@dev-dga/tokens": "^0.11.0",
+    "@dev-dga/css": "^0.13.0",
+    "@dev-dga/react": "^0.13.0",
+    "@dev-dga/tokens": "^0.13.0",
     "@tailwindcss/vite": "^4.3.0",
     "lucide-react": "^1.17.0",
     "react": "^19.2.7",

@@ -365,5 +365,19 @@
   "settings.dangerHelp": "Destructive actions for this workspace.",
   "settings.resetData": "Reset demo data",
   "settings.toast.saved": "Settings saved",
-  "stub.underConstruction": "This view is under construction."
+  "stub.underConstruction": "This view is under construction.",
+  "common.moreInfo": "More information",
+  "carousel.previous": "Previous",
+  "carousel.next": "Next",
+  "catalog.quickFilter": "Quick category filter",
+  "docs.filterKind": "File type",
+  "help.browseTopics": "Browse all topics",
+  "help.api.title": "Developer API",
+  "help.api.desc": "Query the requests API with a bearer token.",
+  "help.api.copy": "Copy code",
+  "help.api.copied": "Copied",
+  "help.verify.aria": "Government website verification",
+  "help.verify.statement": "A government service registered with the Digital Government Authority.",
+  "help.verify.trigger": "How you know?",
+  "help.verify.regLabel": "Registered on Digital Government Authority:"
 }

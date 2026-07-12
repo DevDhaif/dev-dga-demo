@@ -4,7 +4,6 @@ import { expect } from 'vitest';
 
 expect.extend(matchers);
 
-// jsdom has no ResizeObserver; Radix components that measure (e.g. Slider) throw without it.
 class ResizeObserverStub {
   observe() {}
   unobserve() {}
@@ -13,13 +12,11 @@ class ResizeObserverStub {
 globalThis.ResizeObserver =
   globalThis.ResizeObserver ?? (ResizeObserverStub as typeof ResizeObserver);
 
-// jsdom lacks pointer-capture + scrollIntoView; Radix Select/Combobox call them in tests.
 Element.prototype.hasPointerCapture = Element.prototype.hasPointerCapture ?? (() => false);
 Element.prototype.setPointerCapture = Element.prototype.setPointerCapture ?? (() => {});
 Element.prototype.releasePointerCapture = Element.prototype.releasePointerCapture ?? (() => {});
 Element.prototype.scrollIntoView = Element.prototype.scrollIntoView ?? (() => {});
 
-// jsdom has no matchMedia; Sidebar's useIsMobile hook needs it.
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: (query: string): MediaQueryList =>

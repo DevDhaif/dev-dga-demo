@@ -1,5 +1,4 @@
 import {
-  Badge,
   Button,
   Card,
   CardContent,
@@ -8,14 +7,12 @@ import {
   CardIcon,
   CardTitle,
   Link,
-  List,
-  ListItem,
-  ListItemAction,
-  ListItemContent,
+  Tag,
   type DateRange,
 } from '@dev-dga/react';
 import { Inbox } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
+import { RowList, RowItem } from '@/components/RowList';
 import { tField, useLang, useT } from '@/i18n';
 import { STATUS_BADGE, STATUS_KEY, formatDate } from '@/data/labels';
 import { serviceById } from '@/data/fixtures';
@@ -49,28 +46,25 @@ export function PendingRequestsCard({
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <List variant="plain" divided>
+        <RowList divided>
           {rows.map((r) => {
             const service = serviceById(r.serviceId);
             return (
-              <ListItem key={r.id}>
-                <ListItemContent
-                  primary={
-                    <Link asChild>
-                      <RouterLink to={`/requests/${r.id}`}>
-                        {r.id} , {tField(r.applicant.name, lang)}
-                      </RouterLink>
-                    </Link>
-                  }
-                  secondary={`${service ? tField(service.name, lang) : r.serviceId} · ${formatDate(r.submittedAt)}`}
-                />
-                <ListItemAction>
-                  <Badge variant={STATUS_BADGE[r.status]}>{t(STATUS_KEY[r.status])}</Badge>
-                </ListItemAction>
-              </ListItem>
+              <RowItem
+                key={r.id}
+                primary={
+                  <Link asChild>
+                    <RouterLink to={`/requests/${r.id}`}>
+                      {r.id} , {tField(r.applicant.name, lang)}
+                    </RouterLink>
+                  </Link>
+                }
+                secondary={`${service ? tField(service.name, lang) : r.serviceId} · ${formatDate(r.submittedAt)}`}
+                trailing={<Tag variant={STATUS_BADGE[r.status]}>{t(STATUS_KEY[r.status])}</Tag>}
+              />
             );
           })}
-        </List>
+        </RowList>
       </CardContent>
       <CardFooter>
         <Button variant="outline" asChild>
